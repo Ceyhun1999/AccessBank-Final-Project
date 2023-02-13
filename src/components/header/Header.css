@@ -1,0 +1,100 @@
+@font-face {
+    font-family: GTE-regular;
+    src: url('../../../public/assets/fonts/GTEestiProDisplay-Regular.woff');
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__left {
+    display: flex;
+}
+
+.nav__logo {
+    width: 180px;
+    height: 70px;
+    background: url('../../../public/assets/img/headerImg/AccessBankLogo.svg') center no-repeat;
+    background-size: 150px;
+    display: inline-flex;
+}
+
+.nav__link {
+    font: 13px "GTE-regular", sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;
+    height: 100%;
+    color: #4f5258;
+}
+
+.nav__link a {
+    border-right: 1px solid #e2e6ea;
+    padding: 2.5px 10px 3px 10px;
+}
+
+.nav__link:first-of-type a {
+    border-right: 1px solid #e2e6ea;
+    border-left: 1px solid #e2e6ea;
+    padding: 2.5px 10px 3px 10px;
+}
+
+.nav__link a::after {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    background: url('../../../public/assets/img/headerImg/arrowDown.svg') center/cover;
+    background-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    transition: 0.3s;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.testing a::after {
+    left: 49.8%;
+}
+
+.nav__right {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__right-firstItem {
+    display: flex;
+}
+
+.nav__right-line {
+    width: 4px;
+    height: 40px;
+    background: #e2e6ea;
+    border-radius: 8px;
+}
+
+.nav__right-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font: 13px "GTE-regular", sans-serif;
+}
+
+.nav__right-link--active {
+    display: block;
+    color: #6b7d87 !important;
+    background: #f3f3f3;
+    cursor: default;
+    padding: 1px 6px;
+    line-height: 22px;
+    border-radius: 5px;
+}
