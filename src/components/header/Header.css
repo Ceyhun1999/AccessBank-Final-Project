@@ -1,6 +1,5 @@
-@font-face {
-    font-family: GTE-regular;
-    src: url('../../../public/assets/fonts/GTEestiProDisplay-Regular.woff');
+header {
+    box-shadow: 0 5px 10px 0 #3d3d3d1f
 }
 
 .container {
@@ -23,31 +22,33 @@
     background: url('../../../public/assets/img/headerImg/AccessBankLogo.svg') center no-repeat;
     background-size: 150px;
     display: inline-flex;
+    cursor: pointer;
 }
 
-.nav__link {
-    font: 13px "GTE-regular", sans-serif;
-    letter-spacing: 0.5px;
+.nav__left-link {
     position: relative;
     display: flex;
     align-items: center;
     transition: 0.2s ease;
     height: 100%;
-    color: #4f5258;
 }
 
-.nav__link a {
+.nav__left-link a {
+    font: 13px "GTE-regular", sans-serif;
+    letter-spacing: 0.5px;
     border-right: 1px solid #e2e6ea;
     padding: 2.5px 10px 3px 10px;
+    color: #4f5258;
+    cursor: pointer;
 }
 
-.nav__link:first-of-type a {
+.nav__left-link:first-of-type a {
     border-right: 1px solid #e2e6ea;
     border-left: 1px solid #e2e6ea;
     padding: 2.5px 10px 3px 10px;
 }
 
-.nav__link a::after {
+.nav__left-link a::after {
     content: "";
     display: inline-flex;
     width: 10px;
@@ -58,43 +59,114 @@
     bottom: 15px;
     transition: 0.3s;
     left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.testing a::after {
-    left: 49.8%;
+    transform: translate(-52%, 0);
 }
 
 .nav__right {
-    width: 200px;
     display: flex;
     align-items: center;
+    gap: 18px;
 }
 
 .nav__right-firstItem {
     display: flex;
+    align-items: center;
+    margin-right: 30px;
 }
 
 .nav__right-line {
     width: 4px;
     height: 40px;
     background: #e2e6ea;
-    border-radius: 8px;
+    border-radius: 100px;
+    margin: 0 10px;
 }
 
 .nav__right-links {
+    width: 79px;
+    color: #3A3D41;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.nav__right-links a {
+    font: 16px/26px "GTE-regular", sans-serif;
+    letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    font: 13px "GTE-regular", sans-serif;
+    cursor: pointer;
+    color: #2362a7;
+    padding: 1px 6px;
+    border-radius: 5px;
+    margin: 1px 0;
+    transition: 0.2s;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    /*margin-right: 20px;*/
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.nav__right-link--active {
-    display: block;
-    color: #6b7d87 !important;
+.nav__right-item--active a {
+    color: #6b7d87;
     background: #f3f3f3;
     cursor: default;
-    padding: 1px 6px;
-    line-height: 22px;
-    border-radius: 5px;
+    font-size: 13px;
 }
+
+.nav__right-controls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-right: 25px;
+}
+
+.nav__language {
+    margin: 0 4px;
+    position: relative;
+}
+
+.nav__language-icon {
+    width: 32px;
+    height: 28px;
+    background: url('../../../public/assets/img/headerImg/globe.svg') center/cover;
+    background-size: 28px;
+}
+
+.nav__language-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 14px "GTE-regular", sans-serif;
+    line-height: 22px;
+    color: #616161;
+    letter-spacing: 0.5px
+}
+
+.nav__search {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: url('../../../public/assets/img/headerImg/search.svg') center/cover;
+    background-size: 32px;
+}
+
+@media only screen and (max-width: 1028px) {
+   
+    
+    .testing2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+   
+    
+    .testing {
+        display: none;
+    }
+}
+
