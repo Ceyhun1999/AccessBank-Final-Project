@@ -3,6 +3,7 @@
     align-items: center;
     margin-right: 41px;
 }
+
 .nav__right-line {
     width: 4px;
     height: 40px;
@@ -10,6 +11,7 @@
     border-radius: 100px;
     margin: 0 10px;
 }
+
 .nav__right-links {
     width: 79px;
     color: #3A3D41;
@@ -17,12 +19,13 @@
     flex-direction: column;
     align-items: start;
 }
+
 .nav__right-links a {
     font: 16px/26px "GTE-regular", sans-serif;
     letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     cursor: pointer;
     color: #2362a7;
     padding: 1px 6px;
@@ -33,12 +36,15 @@
     letter-spacing: 0.5px;
     transition: 0.2s;
 }
+
 .nav__right-item--active a {
     color: #6b7d87;
     background: #f3f3f3;
     cursor: default;
     font-size: 13px;
 }
+
+.nav__right-item--noActive:hover  a { color: #3583d8 }
 
 @media only screen and (max-width: 800px) {
 

@@ -3,6 +3,7 @@ import "./MenuToggleBtn.css";
 
 export default function MenuToggleBtn() {
     const [activeMenu, setActiveMenu] = useState(false);
+    
     return (
         <div
             onClick={() => setActiveMenu((x) => !x)}

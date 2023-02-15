@@ -4,12 +4,14 @@
     gap: 14px;
     padding-right: 25px;
 }
+
 .nav__language {
     margin: 0 4px;
     position: relative;
     cursor: pointer;
     margin-right: -3px
 }
+
 .nav__language-main {
     display: flex;
     flex-direction: column;
@@ -20,12 +22,14 @@
     height: 50px;
     border-radius: 10px;
 }
+
 .nav__language-icon {
     width: 32px;
     height: 28px;
     background: url('../../../../public/assets/img/headerImg/globe.svg') center/cover;
     background-size: 28px;
 }
+
 .nav__language-other {
     display: none;
     position: absolute;
@@ -40,9 +44,9 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+
 .nav__language-other div {
-    font-size: 15px;
-    line-height: 20px;
+    font: 15px/20px "GTE-regular", sans-serif;
     padding: 4px 0;
     margin-bottom: 4px;
     border-radius: 5px;
@@ -50,16 +54,23 @@
     color: #2362a9;
     letter-spacing: 0.5px;
 }
+
 .nav__language-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    font: 14px "GTE-regular", sans-serif;
-    line-height: 22px;
+    font: 14px/22px "GTE-regular", sans-serif;
     color: #616161;
     letter-spacing: 0.5px
 }
-.nav__search {
+
+.nav__search { 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.nav__search-inner {
     display: flex;
     align-items: center;
     width: 40px;
@@ -68,11 +79,13 @@
     background-size: 32px;
 }
 
+
 .nav__language:hover .nav__language-main { background: #f3f3f3 }
 .nav__language-main:hover { background: #f3f3f3 }
 .nav__language-main:hover ~ .nav__language-other { display: block }
 .nav__language-other div:hover { background: #f2f8ff }
 .nav__language-other:hover { display: block }
+.nav__search:hover { background: #f3f3f3 }
 
 @media only screen and (max-width: 800px) {
 

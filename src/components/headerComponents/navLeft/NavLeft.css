@@ -1,18 +1,20 @@
 .nav__left { display: flex }
-.nav__logo {
+
+.nav__logo-inner {
     width: 180px;
     height: 70px;
     background: url('../../../../public/assets/img/headerImg/AccessBankLogo.svg') center no-repeat;
     background-size: 150px;
-    display: inline-flex;
+    /*display: inline-flex;*/
     cursor: pointer;
 }
+
 .nav__left-link {
     display: flex;
     align-items: center;
     transition: 0.2s ease;
-    height: 100%;
 }
+
 .nav__left-link a {
     font: 13px "GTE-regular", sans-serif;
     letter-spacing: 0.5px;
@@ -23,17 +25,14 @@
     position: relative;
 }
 
-
-
-
 .nav__left-link:first-of-type a {
     border-right: 1px solid #e2e6ea;
     border-left: 1px solid #e2e6ea;
     padding: 2.5px 10px 3px 10px;
 }
+
 .nav__left-link a::after {
     content: "";
-    display: inline-flex;
     width: 10px;
     height: 10px;
     background: url('../../../../public/assets/img/headerImg/arrowDown.svg') center/cover;
@@ -45,25 +44,26 @@
     transform: translate(-52%, 0);
 }
 
+.nav__left-link:hover a::after { transform: rotate(180deg) }
+.nav__left-link:hover { background: linear-gradient(180deg, #f9fafb, white) }
+.nav__left-link:hover .drop { display: block }
+.nav__left-link:hover a { color: #2362a9 }
+.nav__logo:hover { background: #f9fafb }
+
+
 @media only screen and (max-width: 800px) {
 
     .nav__logo { width: 160px; background-size: 130px }
     .nav__left-link { display: none }
 }
 @media only screen and (max-width: 1028px) {
-   
     
-    .testing2 {
-        display: none;
-    }
+    .testing2 { display: none }
 }
 
 @media only screen and (max-width: 885px) {
    
-    
-    .testing {
-        display: none;
-    }
+    .testing { display: none }
 }
 
 

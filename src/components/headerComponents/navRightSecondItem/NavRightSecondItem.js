@@ -14,7 +14,9 @@ export default function NavRightSecondItem() {
                         <div className="nav__language-text">RU</div>
                     </div>
                 </div>
-                <div className="nav__search"></div>
+                <div className="nav__search">
+                    <div className="nav__search-inner"></div>
+                </div>
             </div>
         </div>
     );

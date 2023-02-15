@@ -7,56 +7,82 @@
     width: 100%;
     margin: 0 auto;
     box-shadow: 0px 40px 40px 0px #a1a1a159;
-    z-index: 100;
     border-top: 1px solid #edf0f3;
     transition: 0.2s ease;
     background: #f9fafb
 }
 
-.nav__left-link:hover .drop {
-    display: block;
-}
-
 .drop__content {
     display: flex;
-    flex-wrap: wrap;
-    align-content: start;
     max-width: 1080px;
+    justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    padding: 30px 20px 20px 30px
+    padding: 30px 150px 20px 30px
 }
 
-.drop__content li {
+.drop__content-left li {
     padding: 5px 0 8px 0;
     margin-bottom: 10px;
 }
 
-.drop__content li:not(:last-child) {
+.drop__content-left li:not(:last-child) {
     border-bottom: 2px solid #f2f3f3
 }
 
-.drop__content p {
-    font-size: 15px;
-    line-height: 18px;
-    color: #616161;
-    font-family: "GTE-light";
-    letter-spacing: 0.5px
+.drop__content-left p {
+    font: 15px/18px "GTE-light", sans-serif;
+    color: #141414;
+    letter-spacing: 0.5px;
 }
 
-.drop__content span {
+.drop__content-left span {
     cursor: pointer;
     display: block;
     padding-bottom: 8px;
     color: #484d51;
-    font-family: "GTE-bold";
-    font-size: 16px;
+    font: 16px "GTE-bold", sans-serif;
 }
 
-
-
-.drop__content span:hover  {
-    color: #3d9bff;
+.drop__content-right img {
+    border-radius: 12px;
+    box-shadow: 0 8px 12px 0 #47474730;
+    margin-bottom: 20px;
 }
 
+.drop__content-right p {
+    font: 18px/24px "GTE-bold", sans-serif;
+    color: #3A3D41;
+    max-width: 220px;
+    width: 100%;
+    margin: 0 3px 10px 3px;
+    padding: 0 6px;
+}
 
+.drop__content-right span {
+    font: 15px/22px "GTE-regular", sans-serif;
+    margin: 0 3px 6px 3px;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2362a9;
+    cursor: pointer;
+    transition: 0.1s;
+    position: relative
+}
+
+.drop__content-right span::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    margin: 3px;
+    background-image: url('../../../../public/assets/img/headerImg/arrowDownBlue.svg');
+    transform: rotate(270deg);
+    background-position: center;
+    background-size: 18px
+}
+
+.drop__content-left span:hover  { color: #3d9bff }
+.drop__content-right span:hover { color: #3d9bff  }
+.drop__content-right div:hover span::after{  background-image: url('../../../../public/assets/img/headerImg/arrowDownBlueHover.svg') }

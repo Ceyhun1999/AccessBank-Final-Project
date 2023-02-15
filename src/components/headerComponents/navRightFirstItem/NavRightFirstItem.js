@@ -9,13 +9,19 @@ export default function NavRightFirstItem() {
             <div className="nav__right-line"></div>
             <div className="nav__right-links">
                 <div
-                    onClick={() => setActive(x => !x)}
-                    className={active ? "nav__right-item nav__right-item--active" : "nav__right-item"}>
+                    onClick={() => setActive((x) => !x)}
+                    className={
+                        active
+                            ? "nav__right-item--active"
+                            : "nav__right-item--noActive"
+                    }>
                     <a>Fərdi</a>
                 </div>
                 <div
-                    onClick={() => setActive(x => !x)}
-                    className={!active ? "nav__right-item--active" : " "}>
+                    onClick={() => setActive((x) => !x)}
+                    className={
+                        !active ? "nav__right-item--active" : "nav__right-item--noActive"
+                    }>
                     <a>Biznes</a>
                 </div>
             </div>
