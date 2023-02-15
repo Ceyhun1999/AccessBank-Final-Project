@@ -16,3 +16,13 @@ table { border-collapse: collapse; border-spacing: 0 }
     font-family: GTE-regular;
     src: url('../public/assets/fonts/GTEestiProDisplay-Regular.woff');
 }
+
+@font-face {
+    font-family: GTE-light;
+    src: url('../public/assets/fonts/GTEestiProDisplay-Light.woff');
+}
+
+@font-face {
+    font-family: GTE-bold;
+    src: url('../public/assets/fonts/GTEestiProDisplay-Bold.woff');
+}
