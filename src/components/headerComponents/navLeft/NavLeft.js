@@ -1,7 +1,7 @@
 import DropDowns from "../dropDowns/DropDowns";
 import "./NavLeft.css";
 
-const obj = {
+const objData = {
     data: [
         {
             link: "KREDİTLƏR",
@@ -159,7 +159,7 @@ export default function NavLeft() {
             <a className="nav__logo">
                 <div className="nav__logo-inner"></div>
             </a>
-            {obj.data.map((item, idx) => {
+            {objData.data.map((item, idx) => {
                 let test = "";
                 if (idx === 3) test = "testing";
                 else if (idx === 4) test = "testing2";
@@ -173,3 +173,5 @@ export default function NavLeft() {
         </div>
     );
 }
+
+export { objData };

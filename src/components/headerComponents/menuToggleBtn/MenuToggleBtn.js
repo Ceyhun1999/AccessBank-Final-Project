@@ -1,12 +1,9 @@
-import { useState } from "react";
 import "./MenuToggleBtn.css";
 
-export default function MenuToggleBtn() {
-    const [activeMenu, setActiveMenu] = useState(false);
-    
+export default function MenuToggleBtn({ activeMenu, onChangeActiveMenu }) {
     return (
         <div
-            onClick={() => setActiveMenu((x) => !x)}
+            onClick={onChangeActiveMenu}
             className={activeMenu ? "menu-toggle menu-active" : "menu-toggle menu-not-active"}>
             <span></span>
             <span></span>

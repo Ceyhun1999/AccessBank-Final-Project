@@ -12,6 +12,8 @@ ol, ul { list-style: none  }
 a { text-decoration: none }
 table { border-collapse: collapse; border-spacing: 0 }
 
+
+
 @font-face {
     font-family: GTE-regular;
     src: url('../public/assets/fonts/GTEestiProDisplay-Regular.woff');

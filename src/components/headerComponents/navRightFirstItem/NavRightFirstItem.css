@@ -1,11 +1,12 @@
 .nav__right-firstItem {
     display: flex;
     align-items: center;
-    margin-right: 41px;
+    margin-right: 61.5px;
 }
 
 .nav__right-line {
     width: 4px;
+    min-width: 4px;
     height: 40px;
     background: #e2e6ea;
     border-radius: 100px;
@@ -13,7 +14,8 @@
 }
 
 .nav__right-links {
-    width: 79px;
+    max-width: 79px;
+    width: 100%;
     color: #3A3D41;
     display: flex;
     flex-direction: column;
@@ -53,4 +55,9 @@
     .nav__right-links { flex-direction: column; align-items: end }
     .nav__right-links a { font-size: 14px }
     .nav__right-item--active a { font-size: 12px }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .nav__right-firstItem { flex-direction: row-reverse; margin-right: 10px }
 }
