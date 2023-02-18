@@ -43,7 +43,6 @@
 .slide__btn {
     font: 16px/23px "GTE-regular", sans-serif;
     min-width: 140px;
-    background-color: #31A993;
     color: #fff;
     height: 48px;
     border-radius: 5px ;
@@ -52,6 +51,10 @@
     transition: 0.1s ease;
     outline: none;
     letter-spacing: 0.5px;
+}
+
+.slide__btn:hover {
+    filter: brightness(0.95);
 }
 
 .slide__img {
@@ -152,5 +155,54 @@
         width: 50%;
         min-width: 390px;
        
+    }
+
+    .slide__desc1 {
+        font: bold 26px/30px "GTE-bold", sans-serif;
+        letter-spacing: 0.1px;
+    }
+
+    .slide__img {
+        background-size: 320px!important;
+    }
+}
+
+
+@media only screen and (max-width: 585px) {
+
+    .slide__text-content {
+        padding: 7px 0 10px 20px;
+    }
+
+    .slide__text-content {
+        width: 50%;
+        min-width: 150px;
+    }
+
+    .slide__desc1 {
+        font: bold 22px/24px "GTE-bold", sans-serif;
+    }
+
+    .slide__desc2 {
+        font:  18px/19px "GTE-light", sans-serif;
+    }
+
+    .slide__img {
+        background-size: 220px!important;
+        padding-right: 30px;
+    }
+
+    .slide__btn {
+        font: 15px/23px "GTE-regular", sans-serif;
+        min-width: 90px;
+        background-color: #31A993;
+        color: #fff;
+        height: 40px;
+        border-radius: 5px ;
+        border: none;
+        cursor: pointer;
+        transition: 0.1s ease;
+        outline: none;
+        letter-spacing: 0.5px;
     }
 }

@@ -7,44 +7,67 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-
 const slideData = {
     data: [
         {
             desc1: "40 000 AZN - dək Nağd kredit",
             desc2: "13% - dən başlayaraq",
-            btnTxt: "Sifariş et",
+            btnData: {
+                btnText: "Sifariş et",
+                btnBg: "#31A993",
+                btnTxtColor: "#fff",
+                borderColor: "2px solid #31A993",
+            },
             bg: "#f1f5ff",
         },
         {
             desc1: "Cibiniz dollarla dolsun!",
             desc2: "Dollar depoziti yerləşdirin, illik 4%-dək qazanın!",
-            btnTxt: "Ətraflı",
+            btnData: {
+                btnText: "Ətraflı",
+                btnBg: "#fff",
+                btnTxtColor: "#2673B7",
+                borderColor: "#c4d4e5",
+            },
             bg: "#f1f5ff",
         },
         {
             desc1: "Kredit kartınıza 50 gün istirahət",
             desc2: "10 000 AZN-dək",
-            btnTxt: "Sifariş et",
+            btnData: {
+                btnText: "Sifariş et",
+                btnBg: "#2362a9",
+                btnTxtColor: "#fff",
+                borderColor: "#2362a9",
+            },
             bg: "#d0edfa",
         },
         {
             desc1: "Pulunuz evdə yatmasın!",
             desc2: "Əlverişli depozitlə pulunuz sizə pul gətirsin. ",
-            btnTxt: "Ətraflı",
+            btnData: {
+                btnText: "Ətraflı",
+                btnBg: "#fff",
+                btnTxtColor: "#2673B7",
+                borderColor: "#c4d4e5",
+            },
             bg: "#c8f0ed",
         },
         {
             desc1: "myCard - la göyün yeddinci qatına",
             desc2: "Premium üstünlüklərdən yararlan!",
-            btnTxt: "Ətraflı",
+            btnData: {
+                btnText: "Ətraflı",
+                btnBg: "#31A993",
+                btnTxtColor: "#fff",
+                borderColor: "#c4d4e5",
+            },
             bg: "#f1f5ff",
         },
     ],
 };
 
 export default function Slider() {
-
     return (
         <Swiper
             autoplay={{
@@ -64,7 +87,15 @@ export default function Slider() {
                         <div className="slide__text-content">
                             <p className="slide__desc1">{item.desc1}</p>
                             <p className="slide__desc2">{item.desc2}</p>
-                            <button className="slide__btn">{item.btnTxt}</button>
+                            <button
+                                style={{
+                                    background: item.btnData.btnBg,
+                                    border: `2px solid ${item.btnData.borderColor}`,
+                                    color: item.btnData.btnTxtColor,
+                                }}
+                                className="slide__btn">
+                                {item.btnData.btnText}
+                            </button>
                         </div>
                         <div
                             style={{

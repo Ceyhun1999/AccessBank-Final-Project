@@ -5,6 +5,7 @@
         position: fixed;
         width: 100%;
         height: calc(100vh - 70px);
+        background: #fff;
         z-index: -5;
     }
     
@@ -12,7 +13,6 @@
         display: flex;
         align-items: center;
         justify-content: end;
-        background: #fff;
         padding: 15px 15px 10px 20px;
         border-bottom: 1px solid #e3e5e9;
     }
@@ -34,7 +34,9 @@
         background: url('../../../../public/assets/img/headerImg/search.svg');
     }
 
-    .menu-mobile__content { padding: 10px 20px }
+    .menu-mobile__content { 
+        padding: 10px 20px;
+    }
 
     .menu-mobile__content li{
         cursor: pointer;
