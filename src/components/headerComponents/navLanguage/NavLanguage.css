@@ -32,7 +32,6 @@
     background: #ffffff;
     box-shadow: 0 5px 10px #3162a92b;
     border-radius: 10px;
-    text-align: center;
     transition: 1s;
     top: -1px;
     left: 50%;
@@ -46,7 +45,6 @@
     border-radius: 5px;
     width: 100%;
     color: #2362a9;
-    letter-spacing: 0.5px;
 }
 
 .nav__language-text {
@@ -74,17 +72,10 @@
 .nav__search:hover { background: #f3f3f3 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0 }
+    100% { opacity: 1 }
 }
 
-
-
 @media only screen and (max-width: 800px) {
-
     .nav__language { margin-right: 25px }
 }

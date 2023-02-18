@@ -52,9 +52,9 @@
     
     .menu-toggle span {
         width: 22px;
+        height: 3px;
         margin-bottom: 3px;
         border-radius: 100px;
-        height: 3px;
         background: #9ea9b8;
         transition: all 0.3s;
         position: relative;
@@ -63,6 +63,5 @@
 }
 
 @media only screen and (max-width: 400px) {
-
     .menu-toggle { padding-right: 10px }
 }

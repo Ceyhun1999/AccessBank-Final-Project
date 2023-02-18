@@ -1,9 +1,10 @@
-import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
 import { objData } from "../navLeft/NavLeft";
+import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
 import "./MenuMobile.css";
 
 export default function MenuMobile() {
     const { data } = objData;
+
     return (
         <>
             <div className="menu-mobile">

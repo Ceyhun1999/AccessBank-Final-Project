@@ -27,7 +27,6 @@
     letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;
-    /*margin-left: 10px;*/
     cursor: pointer;
     color: #2362a7;
     padding: 1px 6px;
@@ -58,6 +57,5 @@
 }
 
 @media only screen and (max-width: 400px) {
-
     .nav__right-firstItem { flex-direction: row-reverse; margin-right: 10px }
 }

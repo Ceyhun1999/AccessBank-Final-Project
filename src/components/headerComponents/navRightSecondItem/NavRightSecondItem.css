@@ -20,22 +20,6 @@
     background-size: 32px;
 }
 
-
-
-
-/*.nav__language:hover .nav__language-other { 
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn; 
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0 }
-    100% { opacity: 1 }
-}*/
-
 @media only screen and (max-width: 800px) {
-
     .nav__right-secondItem { display: none }
 }

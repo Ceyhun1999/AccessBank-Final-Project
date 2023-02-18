@@ -1,13 +1,13 @@
+import { useEffect, useState } from "react";
+
 import MenuToggleBtn from "../menuToggleBtn/MenuToggleBtn";
 import NavRightSecondItem from "../navRightSecondItem/NavRightSecondItem";
 import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
 import NavLeft from "../navLeft/NavLeft";
-
-import "./Header.css";
-
-import { useEffect, useState } from "react";
 import MenuMobile from "../menuMobile/MenuMobile";
 import NavLanguage from "../navLanguage/NavLanguage";
+
+import "./Header.css";
 
 export default function Header() {
     const [activeMenu, setActiveMenu] = useState(false);

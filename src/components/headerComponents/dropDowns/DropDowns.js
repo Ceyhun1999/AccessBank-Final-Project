@@ -7,8 +7,8 @@ export default function DropDowns(props) {
         <div className="drop">
             <div className="drop__content">
                 <ul className="drop__content-left">
-                    {drop.map((item) => (
-                        <li>
+                    {drop.map((item, idx) => (
+                        <li key={idx}>
                             <span>{item.span}</span>
                             <p>{item.p}</p>
                         </li>

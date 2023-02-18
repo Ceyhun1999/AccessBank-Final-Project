@@ -7,12 +7,6 @@
     background-size: 150px;
     cursor: pointer;
     transition: height .2s;
-
-}
-
-.sticky {
-    transition: height .2s;
-    height: 60px;
 }
 
 .nav__left-link {
@@ -50,25 +44,24 @@
     transform: translate(-52%, 0);
 }
 
-.nav__left-link:hover a::after { transform: rotate(180deg) }
+.sticky .nav__logo-inner{ transition: height .2s; height: 60px }
+.sticky .drop { top: 60px }
+
+.nav__logo-inner:hover { background-color: #f9fafb }
 .nav__left-link:hover { background: linear-gradient(180deg, #f9fafb, white) }
 .nav__left-link:hover .drop { display: block }
+.nav__left-link:hover a::after { transform: rotate(180deg) }
 .nav__left-link:hover a { color: #2362a9 }
-.nav__logo:hover { background: #f9fafb }
-
 
 @media only screen and (max-width: 800px) {
-
     .nav__logo-inner { width: 160px; background-size: 130px }
     .nav__left-link { display: none }
 }
 @media only screen and (max-width: 1028px) {
-    
     .testing2 { display: none }
 }
 
 @media only screen and (max-width: 885px) {
-   
     .testing { display: none }
 }
 
