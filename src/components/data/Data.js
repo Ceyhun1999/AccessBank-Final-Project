@@ -1,4 +1,4 @@
-const objData = {
+const navBarData = {
     data: [
         {
             link: "KREDİTLƏR",
@@ -210,4 +210,33 @@ const sliderData = {
     ],
 };
 
-export {objData , sliderData}
+const productData = {
+    data: {
+        title: "Seçilmiş məhsullar",
+        cardsInfo: [
+            {
+                cardImg: "",
+                cardTitle: "İstehlak krediti",
+                cardDesc:
+                    "İşləriniz yarıda qalıb? Uyğun nağd kredit təklifi axtarırsınız? Elə isə Sizə özəl kredit təkliflərimiz var!",
+                cardLink: "Kreditlər",
+            },
+            {
+                cardImg: "",
+                cardTitle: "Müddətli depozit",
+                cardDesc:
+                    "50 manatdan (ABŞ dolları) başlayan istənilən məbləği 6 aydan 24 ayadək müddətə banka yatırmaqla vəsaitinizi çoxalda bilərsiniz!",
+                cardLink: "Əmanətlər",
+            },
+            {
+                cardImg: "",
+                cardTitle: "myCard Standard",
+                cardDesc:
+                    "Sahibi olduğunuz myCard Standard kartı ilə beynəlxalq təcrübəni bizimlə kəşf edin!",
+                cardLink: "Kartlar",
+            },
+        ],
+    },
+};
+
+export { navBarData, sliderData, productData };

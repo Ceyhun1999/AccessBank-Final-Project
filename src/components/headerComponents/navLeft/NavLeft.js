@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { objData } from "../../data/Data";
+import { navBarData } from "../../data/Data";
 
 import DropDowns from "../dropDowns/DropDowns";
 import "./NavLeft.css";
@@ -21,7 +21,7 @@ export default function NavLeft() {
             <a className="nav__logo-inner">
                 <div className="nav__logo"></div>
             </a>
-            {objData.data.map((item, idx) => {
+            {navBarData.data.map((item, idx) => {
                 let test = "";
                 if (idx === 3) test = "testing";
                 else if (idx === 4) test = "testing2";
@@ -38,4 +38,3 @@ export default function NavLeft() {
     );
 }
 
-export { objData };

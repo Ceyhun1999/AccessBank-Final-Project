@@ -1,6 +1,6 @@
 import { Autoplay, Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { sliderData } from "../data/Data";
+import { sliderData } from "../../data/Data";
 
 import "./Slider.css";
 import "swiper/css";
@@ -21,7 +21,7 @@ export default function Slider() {
             navigation
             pagination={{ dynamicBullets: true }}>
             {sliderData.data.map((item, idx) => (
-                <SwiperSlide key={idx}  style={{ background: item.bg }}>
+                <SwiperSlide key={idx} style={{ background: item.bg }}>
                     <div className="container">
                         <div style={{ background: item.bg }} className="slide-inner">
                             <div className="slide__text-content">

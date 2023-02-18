@@ -1,12 +1,5 @@
 .swiper-slide { padding-top: 70px }
 
-.swiper:hover .swiper-button-prev   , .swiper:hover .swiper-button-next{
-    display: flex!important;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeIn;
-}
-
 .slide-inner {
     min-height: 420px;
     display: flex;
@@ -17,7 +10,7 @@
     min-width: 495px;
     width: 45%;
     height: 100%;
-    padding: 7px 20px 20px 71.5px;
+    padding: 7px 20px 20px 40px;
     z-index: 2;
 }
 
@@ -54,7 +47,7 @@
     background-size: 420px;
     position: absolute;
     z-index: 1;
-    margin-left: 45%;
+    margin-left: 42.5%;
     transform: translate(-23.6%, 0);
 }
 
@@ -73,10 +66,14 @@
     content: ''!important;
     width: 30px;
     height: 30px;
-    background: url('../../../public/assets/img/sliderImg/arrowPrev.svg') center/cover no-repeat;
+    background: url('../../../../public/assets/img/sliderImg/arrowPrev.svg') center/cover no-repeat;
     position: absolute;
     background-size: 22px;
     transform: rotate(90deg);
+    transition: .5s;
+}
+.swiper-button-next::after {
+    transform: rotate(-90deg);
 }
 
 .swiper-pagination {
@@ -84,18 +81,26 @@
     bottom: 25px!important;
 }
 
-.swiper-pagination span{
+.swiper-pagination span { 
     background: #2362a9 !important;
     width: 8.6px;
     height: 8.6px;
+}
+
+
+.swiper-button-prev:hover, .swiper-button-next:hover { background: #fff; transition: .5s }
+.slide__btn:hover { filter: brightness(0.95) }
+.swiper:hover .swiper-button-prev   , .swiper:hover .swiper-button-next{
+    display: flex!important;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0 }
     100% { opacity: 1 }
 }
-
-.slide__btn:hover { filter: brightness(0.95) }
 
 @media only screen and (max-width: 960px) {
     .slide__text-content { width: 50%; min-width: 390px; padding: 7px 0 20px 40px }

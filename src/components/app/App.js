@@ -1,12 +1,10 @@
 import Header from "../headerComponents/header/Header";
-import Main from "../main/Main";
-import Slider from "../slider/Slider";
+import Main from "../mainComponents/main/Main";
 
 export default function App() {
     return (
         <>
             <Header />
-            <Slider />
             <Main />
         </>
     );

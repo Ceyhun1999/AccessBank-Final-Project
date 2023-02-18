@@ -1,13 +1,13 @@
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 header {
     position: fixed;
     z-index: 2;
     width: 100%;
     top: 0;
+}
+
+.header-content  {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 header::before {

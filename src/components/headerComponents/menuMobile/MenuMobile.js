@@ -1,9 +1,8 @@
-import { objData } from "../navLeft/NavLeft";
+import { navBarData } from "../../data/Data";
 import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
 import "./MenuMobile.css";
-
 export default function MenuMobile() {
-    const { data } = objData;
+    const { data } = navBarData;
 
     return (
         <>

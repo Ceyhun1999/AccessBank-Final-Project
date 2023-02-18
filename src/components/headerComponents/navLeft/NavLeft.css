@@ -57,6 +57,7 @@
     .nav__logo-inner { width: 160px; background-size: 130px }
     .nav__left-link { display: none }
 }
+
 @media only screen and (max-width: 1028px) {
     .testing2 { display: none }
 }

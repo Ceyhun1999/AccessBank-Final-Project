@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <header>
-            <div className="container">
+            <div className="header-content ">
                 <nav className="nav">
                     <NavLeft />
                     <div className="nav__right">
