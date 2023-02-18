@@ -1,4 +1,4 @@
-import { Navigation, Pagination, A11y } from "swiper";
+import { Autoplay, Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./Slider.css";
@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
 
 const slideData = {
     data: [
@@ -43,17 +44,22 @@ const slideData = {
 };
 
 export default function Slider() {
+
     return (
         <Swiper
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
             loop={true}
-            modules={[Navigation, Pagination, A11y]}
+            modules={[Autoplay, Navigation, Pagination, A11y]}
             slidesPerView={1}
             navigation
             pagination={{ dynamicBullets: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}>
             {slideData.data.map((item, idx) => (
-                <SwiperSlide>
+                <SwiperSlide style={{ background: item.bg }}>
                     <div style={{ background: item.bg }} className="slide-inner">
                         <div className="slide__text-content">
                             <p className="slide__desc1">{item.desc1}</p>

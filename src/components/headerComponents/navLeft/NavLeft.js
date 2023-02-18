@@ -1,3 +1,4 @@
+import { useState } from "react";
 import DropDowns from "../dropDowns/DropDowns";
 import "./NavLeft.css";
 
@@ -154,10 +155,27 @@ const objData = {
 };
 
 export default function NavLeft() {
+    const [activeHeader, setActiveHeader] = useState(false);
+
+    //window.addEventListener('resize')
+
+    const changeBg = () => {
+        console.log(document.documentElement.scrollTop);
+        let flag = false;
+        if (document.documentElement.scrollTop > 0) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+
+        setActiveHeader(flag);
+    };
+
+    window.addEventListener("scroll", changeBg);
     return (
         <div className="nav__left">
             <a className="nav__logo">
-                <div className="nav__logo-inner"></div>
+                <div  className={activeHeader ? "nav__logo-inner sticky" : "nav__logo-inner"}></div>
             </a>
             {objData.data.map((item, idx) => {
                 let test = "";

@@ -25,6 +25,7 @@
 
 .nav__language-other {
     display: none;
+    opacity: 0;
     position: absolute;
     width: 56px;
     padding: 65px 5px 3px 5px;
@@ -59,10 +60,29 @@
 
 .nav__language:hover .nav__language-main { background: #f3f3f3 }
 .nav__language-main:hover { background: #f3f3f3 }
-.nav__language-main:hover ~ .nav__language-other { display: block }
+.nav__language-main:hover ~ .nav__language-other { 
+    display: block;animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn; 
+}
 .nav__language-other div:hover { background: #f2f8ff }
-.nav__language-other:hover { display: block }
+.nav__language-other:hover { 
+    display: block;animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn; 
+}
 .nav__search:hover { background: #f3f3f3 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 @media only screen and (max-width: 800px) {
 

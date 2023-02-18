@@ -5,8 +5,14 @@
     height: 70px;
     background: url('../../../../public/assets/img/headerImg/AccessBankLogo.svg') center no-repeat;
     background-size: 150px;
-    /*display: inline-flex;*/
     cursor: pointer;
+    transition: height .2s;
+
+}
+
+.sticky {
+    transition: height .2s;
+    height: 60px;
 }
 
 .nav__left-link {

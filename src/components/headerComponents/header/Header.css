@@ -1,7 +1,11 @@
 header {
-    position: relative;
+    position: fixed;
     z-index: 2;
+    width: 100%;
+    top: 0;
 }
+
+
 
 header::before {
     content: '';
@@ -14,7 +18,7 @@ header::before {
     pointer-events: none;
     z-index: -1;
 }
-
+z
 .container {
     max-width: 1400px;
     margin: 0 auto;
