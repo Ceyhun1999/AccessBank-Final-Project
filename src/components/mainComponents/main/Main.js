@@ -1,6 +1,6 @@
+import Calculator from "../calculator/Calculator";
 import SectionProducts from "../products/Products";
 import Slider from "../slider/Slider";
-import Test from "../test/Test";
 import "./Main.css";
 
 export default function Main() {
@@ -8,7 +8,7 @@ export default function Main() {
         <main>
             <Slider />
             <SectionProducts />
-            <Test />
+            <Calculator />
         </main>
     );
 }

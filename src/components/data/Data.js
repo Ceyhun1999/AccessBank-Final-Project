@@ -239,4 +239,12 @@ const productData = {
     },
 };
 
-export { navBarData, sliderData, productData };
+const calcData = {
+    data: [
+        { rangName: "Müddət",rangName: "Müddət", min: 6, max: 48 , defaultV: 48},
+        { rangName: "Məbləğ", min: 500, max: 40000, defaultV: 20000 },
+        { rangName: "Maaş", min: 350, max: 10000, defaultV: 1200 }
+    ],
+};
+
+export { navBarData, sliderData, productData, calcData };

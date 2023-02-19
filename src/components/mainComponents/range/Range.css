@@ -1,0 +1,58 @@
+.range-block {
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+
+.range-block__item1, .range-block__item3   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range-name {
+    font: 16px/26px "GTE-light", sans-serif;
+    letter-spacing: 0.5px;
+    color: #141414;
+}
+
+.range-value {
+    display: flex;
+    align-items: center;
+}
+
+.range-value input {
+    height: 28px;
+    border-bottom: none;
+    text-align: right;
+    font: 18px/24px "GTE-bold", sans-serif;
+    color: #484D51;
+    letter-spacing: 1.5px;
+    margin: 3px;
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 0;
+    margin-right: 8px;
+}
+
+.range-value span {
+    font: 20px/24px "GTE-light", sans-serif;
+    color: #141414;
+}
+
+.azn {
+    display: inline-block;
+    background: url('../../../../public/assets/img/diffImg/azn.svg') center/cover no-repeat;
+    background-size: 16px;
+    width: 24px;
+    height: 20px;
+    margin-right: 2px;
+    filter: brightness(3);
+}
+
+.range-block__item3 {
+    height: 12px;
+    color: #141414;
+    font: 14px 'GTE-light', sans-serif;
+    letter-spacing: 0.5px;
+}
