@@ -90,7 +90,7 @@
 
 .swiper-button-prev:hover, .swiper-button-next:hover { background: #fff; transition: .5s }
 .slide__btn:hover { filter: brightness(0.95) }
-.swiper:hover .swiper-button-prev   , .swiper:hover .swiper-button-next{
+.swiper:hover .swiper-button-prev, .swiper:hover .swiper-button-next{
     display: flex!important;
     animation-duration: 1s;
     animation-fill-mode: both;

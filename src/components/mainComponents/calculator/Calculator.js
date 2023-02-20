@@ -5,9 +5,9 @@ import "./Calculator.css";
 
 export default function Calculator() {
     const [val, setVal] = useState({
-        "Müddət": null,
-        "Məbləğ": null,
-        "Maaş": null,
+        Müddət: null,
+        Məbləğ: null,
+        Maaş: null,
     });
 
     const onChangeAmount = (e, name) => {
@@ -21,7 +21,7 @@ export default function Calculator() {
         <section className="calculator">
             <div className="container">
                 <div className="calculator__inner">
-                    <div className="calculator__title">
+                    <div>
                         <h2 className="calculator__title-item1">Kredit kalkulyatoru</h2>
                         <span className="calculator__btn">İstehlak krediti</span>
                     </div>
@@ -40,7 +40,16 @@ export default function Calculator() {
                                 );
                             })}
                         </div>
-                        <div className="calculator__result"></div>
+                        <div className="calculator__result">
+                            <p>Aylıq ödəniş</p>
+                            <div className="calculator__result-value">
+                                <span>609</span>
+                                <span></span>
+                            </div>
+                            <button>
+                                Sifariş et
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

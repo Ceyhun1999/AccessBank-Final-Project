@@ -33,6 +33,8 @@
     background: none;
     border-radius: 0;
     margin-right: 8px;
+    width: 100%;
+    display: inline-block;
 }
 
 .range-value span {
