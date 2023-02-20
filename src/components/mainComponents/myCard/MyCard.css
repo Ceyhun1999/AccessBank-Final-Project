@@ -1,0 +1,84 @@
+.myCard { padding: 30px 20px }
+
+.myCard__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 380px;
+    padding: 0 20px;
+    margin: 20px auto 20px auto;
+}
+
+.myCard__img {
+    display: inline-flex;
+    max-width: 46%;
+    margin: 0 2%;
+    width: 100%;
+    min-height: 260px;
+    background: url('../../../../public/assets/img/diffImg/myCard.png') center/contain no-repeat;
+}
+
+.myCard__text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 46%;
+    margin: 0 2%;
+    color: #3A3D41;
+}
+
+.myCard__title {
+    font: lighter 28px/32px "GTE-regular", sans-serif;
+    margin: 0 0 8px 0;
+}
+
+.myCard__desc {
+    font: lighter 18px/28px "GTE-light", sans-serif;
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.myCard__btn {
+    font: 16px "GTE-regular", sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    background-color: #2362a9;
+    color: #f1f3f6;
+    letter-spacing: .5px;
+}
+
+.myCard__btn:hover { filter: brightness(0.95) }
+
+@media only screen and (max-width: 800px) {
+
+    .myCard__inner { flex-direction: column }
+
+    .myCard__img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .myCard__text {
+        width: 100%;
+        margin: 0;
+        max-width: 600px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .myCard__title {
+        font: lighter 20px/28px "GTE-regular", sans-serif;
+        margin: 10px 0 12px 0;
+        letter-spacing: 0.6px;
+    }
+
+    .myCard__desc { margin-bottom: 35px }
+}
+

@@ -17,7 +17,6 @@ table { border-collapse: collapse; border-spacing: 0 }
     margin: 0 auto;
 }
 
-
 @font-face {
     font-family: GTE-regular;
     src: url('../public/assets/fonts/GTEestiProDisplay-Regular.woff');

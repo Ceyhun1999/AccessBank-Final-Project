@@ -14,14 +14,14 @@
     z-index: 2;
 }
 
-.slide__desc1 {
+.slide__title {
     font: bold 36px/38px "GTE-bold", sans-serif;
     color: #3A3D41;
     letter-spacing: 0.5px;
     padding-bottom: 12px;
 }
 
-.slide__desc2 {
+.slide__desc {
     font: 18px/24px "GTE-light", sans-serif;
     letter-spacing: 0.5px;
     color: #3A3D41;
@@ -87,7 +87,6 @@
     height: 8.6px;
 }
 
-
 .swiper-button-prev:hover, .swiper-button-next:hover { background: #fff; transition: .5s }
 .slide__btn:hover { filter: brightness(0.95) }
 .swiper:hover .swiper-button-prev, .swiper:hover .swiper-button-next{
@@ -109,7 +108,7 @@
 @media only screen and (max-width: 800px) {
 
     .slide__img { background-size: 320px!important }
-    .slide__desc1 {
+    .slide__title {
         font: bold 26px/30px "GTE-bold", sans-serif;
         letter-spacing: 0.1px;
     }
@@ -125,8 +124,8 @@
         padding: 0 0 0 20px 
     }
 
-    .slide__desc1 { font: bold 22px/24px "GTE-bold", sans-serif }
-    .slide__desc2 { font:  18px/19px "GTE-light", sans-serif }
+    .slide__title { font: bold 22px/24px "GTE-bold", sans-serif }
+    .slide__desc { font:  18px/19px "GTE-light", sans-serif }
     .slide__img { background-size: 220px!important; padding-right: 30px }
 
     .slide__btn {

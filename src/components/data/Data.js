@@ -153,19 +153,22 @@ const navBarData = {
 const sliderData = {
     data: [
         {
-            desc1: "40 000 AZN - dək Nağd kredit",
-            desc2: "13% - dən başlayaraq",
+            title: "40 000 AZN - dək Nağd kredit",
+            desc: "13% - dən başlayaraq",
             btnData: {
                 btnText: "Sifariş et",
-                btnBg: "#31A993",
-                btnTxtColor: "#fff",
-                borderColor: "2px solid #31A993",
+                btnBg: "#fff",
+                btnTxtColor: "#2673B7",
+                borderColor: "#c4d4e5",
+                //btnBg: "#31A993",
+                //btnTxtColor: "#fff",
+                //borderColor: "2px solid #31A993",
             },
-            bg: "#f1f5ff",
+            //bg: "#f1f5ff",
         },
         {
-            desc1: "Cibiniz dollarla dolsun!",
-            desc2: "Dollar depoziti yerləşdirin, illik 4%-dək qazanın!",
+            title: "Cibiniz dollarla dolsun!",
+            desc: "Dollar depoziti yerləşdirin, illik 4%-dək qazanın!",
             btnData: {
                 btnText: "Ətraflı",
                 btnBg: "#fff",
@@ -175,8 +178,8 @@ const sliderData = {
             bg: "#f1f5ff",
         },
         {
-            desc1: "Kredit kartınıza 50 gün istirahət",
-            desc2: "10 000 AZN-dək",
+            title: "Kredit kartınıza 50 gün istirahət",
+            desc: "10 000 AZN-dək",
             btnData: {
                 btnText: "Sifariş et",
                 btnBg: "#2362a9",
@@ -186,8 +189,8 @@ const sliderData = {
             bg: "#d0edfa",
         },
         {
-            desc1: "Pulunuz evdə yatmasın!",
-            desc2: "Əlverişli depozitlə pulunuz sizə pul gətirsin. ",
+            title: "Pulunuz evdə yatmasın!",
+            desc: "Əlverişli depozitlə pulunuz sizə pul gətirsin. ",
             btnData: {
                 btnText: "Ətraflı",
                 btnBg: "#fff",
@@ -197,8 +200,8 @@ const sliderData = {
             bg: "#c8f0ed",
         },
         {
-            desc1: "myCard - la göyün yeddinci qatına",
-            desc2: "Premium üstünlüklərdən yararlan!",
+            title: "myCard - la göyün yeddinci qatına",
+            desc: "Premium üstünlüklərdən yararlan!",
             btnData: {
                 btnText: "Ətraflı",
                 btnBg: "#fff",

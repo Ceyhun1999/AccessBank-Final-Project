@@ -25,8 +25,8 @@ export default function Slider() {
                     <div className="container">
                         <div style={{ background: item.bg }} className="slide-inner">
                             <div className="slide__text-content">
-                                <p className="slide__desc1">{item.desc1}</p>
-                                <p className="slide__desc2">{item.desc2}</p>
+                                <h2 className="slide__title">{item.title}</h2>
+                                <p className="slide__desc">{item.desc}</p>
                                 <button
                                     style={{
                                         background: item.btnData.btnBg,
