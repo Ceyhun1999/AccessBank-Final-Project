@@ -41,7 +41,7 @@
 
 .calculator__sliders {
     width: 420px;
-    height: 336px;
+    min-height: 336px;
     margin: 0 20px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .calculator__result-value span:last-child {
-    background: url('../../../../public/assets/img/diffImg/azn.svg') center/cover no-repeat;
+    background: url('../../../../public/assets/img/mainImg/diffImg/azn.svg') center/cover no-repeat;
     display: inline-block;
     background-size: 20px;
     width: 28px;

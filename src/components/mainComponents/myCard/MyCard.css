@@ -15,7 +15,7 @@
     margin: 0 2%;
     width: 100%;
     min-height: 260px;
-    background: url('../../../../public/assets/img/diffImg/myCard.png') center/contain no-repeat;
+    background: url('../../../../public/assets/img/mainImg/diffImg/myCard.png') center/contain no-repeat;
 }
 
 .myCard__text {

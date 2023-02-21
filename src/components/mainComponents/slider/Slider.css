@@ -66,7 +66,7 @@
     content: ''!important;
     width: 30px;
     height: 30px;
-    background: url('../../../../public/assets/img/sliderImg/arrowPrev.svg') center/cover no-repeat;
+    background: url('../../../../public/assets/img/mainImg/sliderImg/arrowPrev.svg') center/cover no-repeat;
     position: absolute;
     background-size: 22px;
     transform: rotate(90deg);

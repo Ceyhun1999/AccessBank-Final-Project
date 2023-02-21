@@ -39,7 +39,7 @@ export default function Slider() {
                             </div>
                             <div
                                 style={{
-                                    background: `url(./assets/img/sliderImg/slide${
+                                    background: `url(./assets/img/mainImg/sliderImg/slide${
                                         idx + 1
                                     }.png) center no-repeat`,
                                     backgroundSize: "420px",

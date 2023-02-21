@@ -1,4 +1,5 @@
 import Calculator from "../calculator/Calculator";
+import MyAccess from "../myAccess/MyAccess";
 import MyCard from "../myCard/MyCard";
 import SectionProducts from "../products/Products";
 import Slider from "../slider/Slider";
@@ -11,6 +12,7 @@ export default function Main() {
             <SectionProducts />
             <Calculator />
             <MyCard />
+            <MyAccess />
         </main>
     );
 }

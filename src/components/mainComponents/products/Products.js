@@ -15,7 +15,7 @@ export default function SectionProducts() {
                             <div className="product-card">
                                 <div
                                     style={{
-                                        background: `url('./assets/img/productsImg/product${
+                                        background: `url('./assets/img/mainImg/productsImg/product${
                                             idx + 1
                                         }.jpg') center/cover`,
                                     }}

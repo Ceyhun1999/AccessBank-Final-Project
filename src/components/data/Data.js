@@ -164,7 +164,7 @@ const sliderData = {
                 //btnTxtColor: "#fff",
                 //borderColor: "2px solid #31A993",
             },
-            //bg: "#f1f5ff",
+            bg: "#f1f5ff",
         },
         {
             title: "Cibiniz dollarla dolsun!",

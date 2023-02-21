@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { calcData } from "../../data/Data";
 import Range from "../range/Range";
 import "./Calculator.css";
@@ -9,12 +9,19 @@ export default function Calculator() {
         Məbləğ: null,
         Maaş: null,
     });
+    const [pmt , setPmt] = useState()
+
+    useEffect(() => {}, [val]);
 
     const onChangeAmount = (e, name) => {
         setVal({
             ...val,
             [name]: e.target.value,
         });
+    };
+
+    const calculatePMT = () => {
+
     };
 
     return (
@@ -46,9 +53,7 @@ export default function Calculator() {
                                 <span>609</span>
                                 <span></span>
                             </div>
-                            <button>
-                                Sifariş et
-                            </button>
+                            <button>Sifariş et</button>
                         </div>
                     </div>
                 </div>
