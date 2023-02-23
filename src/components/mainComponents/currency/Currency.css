@@ -95,6 +95,17 @@
     letter-spacing: 1.5px;
 }
 
+.price::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url('../../../../public/assets/img/mainImg/diffImg/arrowCurrency.svg') center/cover;
+    background-size: 24px;
+}
+
 .last-td {
     background: #f2f7ff;
     border-right: none!important;

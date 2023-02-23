@@ -3,37 +3,17 @@ import { useEffect, useState } from "react";
 import "./Currency.css";
 
 export default function Currency() {
-    const [currencyList, setCurrencyList] = useState({
-        USD: null,
-        EUR: null,
-        GBP: null,
-        RUB: null,
-    });
+    const [currencyList, setCurrencyList] = useState({ USD: null, EUR: null, GBP: null, RUB: null });
 
     const getCurrencyValue = () => {
-        let copy = {
-            USD: null,
-            EUR: null,
-            GBP: null,
-            RUB: null,
-        };
-
+        let copy = { ...currencyList };
         Promise.all(
             Object.keys(copy).map((item) => {
-                fetch(`https://api.exchangerate.host/convert?from=AZN&to=${item}&date=2022-04-04`)
+                return fetch(`https://api.exchangerate.host/convert?from=${item}&to=AZN`)
                     .then((res) => res.json())
-                    .then(
-                        (data) => {
-                            copy[item] = 1;
-                        },
-
-                        (error) => {
-                            console.log(error);
-                        }
-                    );
+                    .then((data) => (copy[item] = data.result.toFixed(4)));
             })
-        ).then(() => console.log(copy));
-
+        ).then(() =>  setCurrencyList(copy));
     };
 
     useEffect(() => {
@@ -65,7 +45,12 @@ export default function Currency() {
                                             <tr key={item}>
                                                 <td>{item}</td>
                                                 <td className="price">{currencyList[item]}</td>
-                                                <td className="price last-td">1.7025</td>
+                                                <td className="price last-td">
+                                                    {(item === "RUB"
+                                                        ? +currencyList[item] + 0.001
+                                                        : +currencyList[item] + 0.01
+                                                    ).toFixed(4)}
+                                                </td>
                                             </tr>
                                         );
                                     })}
