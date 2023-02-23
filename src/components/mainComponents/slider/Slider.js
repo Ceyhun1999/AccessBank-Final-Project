@@ -1,6 +1,6 @@
 import { Autoplay, Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { sliderData } from "../../data/Data";
+import { sliderData } from "../../../data/Data";
 
 import "./Slider.css";
 import "swiper/css";

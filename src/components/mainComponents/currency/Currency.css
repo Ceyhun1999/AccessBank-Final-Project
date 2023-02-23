@@ -1,0 +1,101 @@
+.currency { background-color: #fdfdfd; padding: 30px 20px }
+.currency-inner { max-width: 980px; margin: auto }
+.currency__top { text-align: center }
+
+.currency__title {
+    font: lighter 28px/32px "GTE-regular", sans-serif;
+    margin: 0 0 24px 0;
+    color: #3A3D41;
+    width: 100%;
+}
+
+.currency__top-btns {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px
+}
+
+.currency__top-btns button {
+    font: lighter 17px/20px "GTE-regular", sans-serif;
+    margin: 6px 8px;
+    padding: 12px 28px;
+    border-radius: 100px;
+    color: #2362a9;
+    cursor: pointer;
+    transition: 0.2s ease;
+    min-width: 80px;
+    border: none;
+    box-shadow: 0px 2px 4px 0 #26376d3d, inset 0px 0px 0px 0 #26376d3d;
+    background: #fff;
+}
+
+.currency__activeBtn {
+    cursor: default!important;
+    color: #575D61!important;
+    background: #f5f5f5!important;
+    box-shadow: 0px 0px 0px 0 #26376d3d, inset 0px 2px 4px 0 #26376d3d!important;
+}
+
+.currency__table {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 56%;
+    margin: 0 2%;
+}
+
+.currency__table-inner {
+    padding-top: 0;
+    padding-bottom: 18px;
+    min-height: 270px;
+    overflow: auto;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    width: 100%
+}
+
+.currency__table table {
+    display: table;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+.currency__table tr {
+    vertical-align: top;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.thead td{
+    font-family: "GTE-bold"!important;
+    font-weight: normal;
+}
+
+.currency__table td {
+    height: 50px;
+    padding: 10px 8px;
+    max-width: 250px;
+    color: #777c84;
+    font-family: "GTE-light";
+    transition: 0.2s;
+    border-right: 2px solid #f2f2f2;
+    vertical-align: middle;
+    width: 33%;
+}
+
+.currency__table tr:last-child { border-bottom: none }
+
+.price {
+    position: relative;
+    letter-spacing: 1.5px;
+}
+
+.last-td {
+    background: #f2f7ff;
+    border-right: none!important;
+}

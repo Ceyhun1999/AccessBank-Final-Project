@@ -69,6 +69,7 @@
     background-color: #3A3D41;
     color: #f1f3f6;
     border: none;
+    cursor: pointer;
 }
 
 .myAccess__img {

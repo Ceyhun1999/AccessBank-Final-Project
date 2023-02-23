@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { calcData } from "../../data/Data";
+import { calcData } from "../../../data/Data";
 import Range from "../range/Range";
+
 import "./Calculator.css";
 
 export default function Calculator() {

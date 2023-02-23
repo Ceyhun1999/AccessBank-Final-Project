@@ -7,7 +7,7 @@ export default function Range({ data, defaultTxt, onChangeAmount, val }) {
             <div className="range-block__item1">
                 <span className="range-name">{data.rangName}</span>
                 <div className="range-value">
-                    <input name={data.rangName} value={val[data.rangName] ? val[data.rangName] : data.defaultV} />
+                    <input name={data.rangName} defaultValue={val[data.rangName] ? val[data.rangName] : data.defaultV} />
                     <span className={!defaultTxt ? "azn" : ""}>{defaultTxt}</span>
                 </div>
             </div>

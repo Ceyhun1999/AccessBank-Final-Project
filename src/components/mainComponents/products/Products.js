@@ -1,10 +1,10 @@
-import { productData } from "../../data/Data";
+import { productData } from "../../../data/Data";
 
 import "./Products.css";
 
 export default function SectionProducts() {
     const { data } = productData;
-    console.log(data);
+    
     return (
         <section className="products">
             <div className="container">
@@ -12,7 +12,7 @@ export default function SectionProducts() {
                     <h2 className="products__title">{data.title}</h2>
                     <div className="product__cards">
                         {data.cardsInfo.map((item, idx) => (
-                            <div className="product-card">
+                            <div key={idx} className="product-card">
                                 <div
                                     style={{
                                         background: `url('./assets/img/mainImg/productsImg/product${
