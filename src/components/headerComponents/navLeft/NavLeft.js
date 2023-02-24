@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { navBarData } from "../../../data/Data";
 import DropDowns from "../dropDowns/DropDowns";
-
 import "./NavLeft.css";
 
 export default function NavLeft() {

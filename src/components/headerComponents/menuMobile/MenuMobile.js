@@ -1,11 +1,8 @@
 import { navBarData } from "../../../data/Data";
 import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
-
 import "./MenuMobile.css";
 
 export default function MenuMobile() {
-    const { data } = navBarData;
-
     return (
         <>
             <div className="menu-mobile">
@@ -15,7 +12,7 @@ export default function MenuMobile() {
                 </div>
                 <div className="menu-mobile__content">
                     <ul>
-                        {data.map((item) => (
+                        {navBarData.data.map((item) => (
                             <li>
                                 <p>{item.link}</p>
                                 <span></span>

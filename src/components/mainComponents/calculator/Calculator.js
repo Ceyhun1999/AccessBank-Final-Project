@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { calcData } from "../../../data/Data";
 import Range from "../range/Range";
-
 import "./Calculator.css";
 
 export default function Calculator() {
@@ -10,7 +9,6 @@ export default function Calculator() {
         Məbləğ: null,
         Maaş: null,
     });
-    const [pmt , setPmt] = useState()
 
     useEffect(() => {}, [val]);
 
@@ -21,10 +19,7 @@ export default function Calculator() {
         });
     };
 
-    const calculatePMT = () => {
-
-    };
-
+   
     return (
         <section className="calculator">
             <div className="container">

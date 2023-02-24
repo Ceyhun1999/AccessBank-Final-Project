@@ -72,9 +72,7 @@
     transform: rotate(90deg);
     transition: .5s;
 }
-.swiper-button-next::after {
-    transform: rotate(-90deg);
-}
+.swiper-button-next::after { transform: rotate(-90deg) }
 
 .swiper-pagination {
     position: absolute;

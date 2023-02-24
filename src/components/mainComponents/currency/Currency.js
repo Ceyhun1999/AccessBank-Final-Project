@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import "./Currency.css";
 
 export default function Currency() {

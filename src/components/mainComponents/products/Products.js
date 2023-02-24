@@ -1,17 +1,14 @@
 import { productData } from "../../../data/Data";
-
 import "./Products.css";
 
 export default function SectionProducts() {
-    const { data } = productData;
-    
     return (
         <section className="products">
             <div className="container">
                 <div className="products__content">
-                    <h2 className="products__title">{data.title}</h2>
+                    <h2 className="products__title">{productData.data.title}</h2>
                     <div className="product__cards">
-                        {data.cardsInfo.map((item, idx) => (
+                        {productData.data.cardsInfo.map((item, idx) => (
                             <div key={idx} className="product-card">
                                 <div
                                     style={{
