@@ -1,22 +1,41 @@
 import { useEffect, useState } from "react";
 import "./Currency.css";
+import CurrecyServices from "../../../services/CurrecyServices";
 
 export default function Currency() {
-    const [currencyList, setCurrencyList] = useState({ USD: null, EUR: null, GBP: null, RUB: null });
+    const [currencyListToday, setCurrencyListToday] = useState({
+        USD: null,
+        EUR: null,
+        GBP: null,
+        RUB: null,
+    });
+    const [currencyListYest, setCurrencyListYest] = useState({ USD: null, EUR: null, GBP: null, RUB: null });
 
-    const getCurrencyValue = () => {
-        let copy = { ...currencyList };
-        Promise.all(
-            Object.keys(copy).map((item) => {
-                return fetch(`https://api.exchangerate.host/convert?from=${item}&to=AZN`)
-                    .then((res) => res.json())
-                    .then((data) => (copy[item] = data.result.toFixed(4)));
-            })
-        ).then(() =>  setCurrencyList(copy));
+    const currencyService = new CurrecyServices();
+
+    const getCurrencyValueToday = async () => {
+        let copy = { ...currencyListToday };
+        let data = [];
+        let date = new Date().toISOString().split("T")[0];
+        await currencyService.getData(copy, date).then((res) => (data = res));
+        Object.keys(copy).map((item, idx) => (copy[item] = data[idx]));
+        setCurrencyListToday(copy);
+    };
+
+    const getCurrencyValueYest = async () => {
+        let copy = { ...currencyListYest };
+        let data = [];
+        let date = new Date();
+        date.setDate(new Date().getDate() - 1);
+        date = date.toISOString().split("T")[0];
+        await currencyService.getData(copy, date).then((res) => (data = res));
+        Object.keys(copy).map((item, idx) => (copy[item] = data[idx]));
+        setCurrencyListYest(copy);
     };
 
     useEffect(() => {
-        getCurrencyValue();
+        getCurrencyValueToday();
+        getCurrencyValueYest();
     }, []);
 
     return (
@@ -39,15 +58,23 @@ export default function Currency() {
                                         <td>Alış</td>
                                         <td className="last-td">Satış</td>
                                     </tr>
-                                    {Object.keys(currencyList).map((item, idx) => {
+                                    {Object.keys(currencyListToday).map((item, idx) => {
+                                        let decor = "stabil";
+                                        if (+currencyListToday[item] > +currencyListYest[item]) decor = "up";
+                                        else if (+currencyListToday[item] < +currencyListYest[item]) {
+                                            decor = "down";
+                                        }
+
                                         return (
                                             <tr key={item}>
                                                 <td>{item}</td>
-                                                <td className="price">{currencyList[item]}</td>
-                                                <td className="price last-td">
+                                                <td className={"price " + decor}>
+                                                    {currencyListToday[item]}
+                                                </td>
+                                                <td className={"price last-td " + decor}>
                                                     {(item === "RUB"
-                                                        ? +currencyList[item] + 0.001
-                                                        : +currencyList[item] + 0.01
+                                                        ? +currencyListToday[item] + 0.001
+                                                        : +currencyListToday[item] + 0.01
                                                     ).toFixed(4)}
                                                 </td>
                                             </tr>

@@ -70,7 +70,7 @@
     border-bottom: 2px solid #f2f2f2;
 }
 
-.thead td{
+.thead td {
     font-family: "GTE-bold"!important;
     font-weight: normal;
 }
@@ -94,18 +94,34 @@
     letter-spacing: 1.5px;
 }
 
-.price::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-    background: url('../../../../public/assets/img/mainImg/diffImg/arrowCurrency.svg') center/cover;
-    background-size: 24px;
-}
-
 .last-td {
     background: #f2f7ff;
     border-right: none!important;
 }
+
+.stabil::before, .down::before, .up::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 23px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-size: 24px;
+}
+
+.stabil::before { background: url('../../../../public/assets/img/mainImg/diffImg/minusCurrency.svg') center/cover }
+
+.down::before {
+    background: url('../../../../public/assets/img/mainImg/diffImg/arrowCurrency.svg') center/cover;
+    filter: invert(23%) sepia(71%) saturate(2962%) hue-rotate(348deg) brightness(90%) contrast(91%);
+}
+
+.up::before {
+    background: url('../../../../public/assets/img/mainImg/diffImg/arrowCurrency.svg') center/cover;
+    filter:invert(20%) sepia(96%) saturate(4046%) hue-rotate(103deg) brightness(97%) contrast(105%);
+    transform: rotate(180deg);
+}
+
+
+
+
