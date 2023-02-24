@@ -244,12 +244,15 @@ const productData = {
 
 const calcData = {
     data: [
-        { rangName: "Müddət", min: 6, max: 48, defaultV: 48 },
-        { rangName: "Məbləğ", min: 500, max: 40000, defaultV: 20000 },
-        { rangName: "Maaş", min: 350, max: 10000, defaultV: 1200 },
+        { rangName: "time", rangText: "Müddət", min: 6, max: 48 },
+        { rangName: "amount", rangText: "Məbləğ", min: 500, max: 40000 },
+        { rangName: "salary", rangText: "Maaş", min: 350, max: 10000 },
     ],
+    defaultV: {
+        defaultT: 48,
+        defaultA: 20000,
+        defaultS: 1200,
+    },
 };
-
-
 
 export { navBarData, sliderData, productData, calcData };
