@@ -1,5 +1,5 @@
 import Calculator from "../calculator/Calculator";
-import Currency from "../currency/Currency";
+import CurrencyBlock from "../currencyBlock/CurrencyBlock";
 import MyAccess from "../myAccess/MyAccess";
 import MyCard from "../myCard/MyCard";
 import SectionProducts from "../products/Products";
@@ -13,7 +13,7 @@ export default function Main() {
             <Calculator />
             <MyCard />
             <MyAccess />
-            <Currency />
+            <CurrencyBlock />
         </main>
     );
 }

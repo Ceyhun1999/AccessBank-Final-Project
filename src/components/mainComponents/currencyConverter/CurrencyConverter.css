@@ -1,0 +1,99 @@
+.currency-converter {
+    position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    height: fit-content;
+    margin: 20px 0;
+    height: 200px;
+    right: 0;
+    top: 25px;
+}
+
+.currency-converter__item {
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #ebeef7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px 0px #6981cc54;
+}
+
+.currency-converter__controls {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.currency-converter__arrow {
+    width: 40px;
+    height: 40px;
+    background: url('../../../../public/assets/img/mainImg/diffImg/exchange-ng.svg') no-repeat center;
+    background-size: 22px;
+    margin: 12px 26px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.currency-converter__item .select {
+    letter-spacing: 1.5px;
+    color: #141414;
+    background-color: #f7f7f7;
+    width: 110px;
+    padding: 12px 6px 12px 16px;
+    background-position: 60px 50%;
+    height: 64px;
+}
+
+.select {
+    background: url('../../../../public/assets/img/mainImg/diffImg/arrowCurrency.svg') no-repeat right center;
+    background-size: 22px;
+    cursor: pointer;
+    z-index: 1;
+    appearance: none;
+    outline: none;
+    border: none;
+    font: 16px/24px "GTE-regular", sans-serif;
+}
+
+.currency-converter .input {
+    font: 22px/38px "GTE-regular", sans-serif;
+    letter-spacing: 1.5px;
+    padding: 8px 12px;
+    text-align: right;
+    background-color: #fff;
+    margin: 0;
+    height: 64px;
+    display: inline-flex;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    outline: none;
+    border: none;
+    color: #3A3D41;
+}
+
+
+.currency-converter__swap {
+    width: 40px;
+    height: 40px;
+    background: url("../../../../public/assets/img/mainImg/diffImg/arrowCurrency.svg") no-repeat center;
+    background-size: 30px;
+    margin: 12px;
+    transform: rotate(0);
+    filter: brightness(1.2);
+}
+
+
+.currency-converter__arrow:hover { background-color: #eeeeee }
+
+
+
