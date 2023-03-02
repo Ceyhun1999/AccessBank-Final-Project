@@ -46,10 +46,9 @@
     letter-spacing: 1.5px;
 }
 
-.last-td {
-    background: #f2f7ff;
-    border-right: none!important;
-}
+.last-td { border-right: none!important }
+.activeTable { background: #f2f7ff }
+.noActiveTable { background: #f7f7f7 }
 
 .stabil::before, .down::before, .up::before {
     content: "";
@@ -74,6 +73,6 @@
     transform: rotate(180deg);
 }
 
-
-
+.dispN { display: none }
+.data { font: 14px "GTE-light", sans-serif!important }
 
