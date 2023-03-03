@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { navBarData } from "../../../data/Data";
+import MenuMobileItem from "../menuMobileItem/menuMobileItem";
 import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
 import "./MenuMobile.css";
 
@@ -12,12 +14,9 @@ export default function MenuMobile() {
                 </div>
                 <div className="menu-mobile__content">
                     <ul>
-                        {navBarData.data.map((item) => (
-                            <li>
-                                <p>{item.link}</p>
-                                <span></span>
-                            </li>
-                        ))}
+                        {navBarData.data.map((item, idx) => {
+                            return <MenuMobileItem  key={idx} data={item} idx={idx} />;
+                        })}
                     </ul>
                 </div>
                 <div className="menu-mobile__footer">asagi</div>

@@ -7,6 +7,8 @@
         height: calc(100vh - 70px);
         background: #fff;
         z-index: -5;
+        overflow: auto;
+
     }
     
     .menu-mobile__header {
@@ -29,7 +31,7 @@
 
     .menu-mobile__content { padding: 10px 20px }
 
-    .menu-mobile__content li{
+    .mobile-link {
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -38,6 +40,20 @@
         color: #626972;
         letter-spacing: 0.5px;
         min-height: 47px
+    }
+
+    .mobile-link__drop {
+        padding: 0px 0px 0px 16px;
+        border-left: 4px solid #d2d6dc;
+        display: none;
+    }
+    
+    .mobile-link__drop li {
+        font: 17px/23px "GTE-regular", sans-serif!important;
+        width: 100%;
+        padding: 5px 0;
+        color: #2362a9;
+        cursor: pointer;
     }
 
     .menu-mobile__content span {
@@ -54,5 +70,9 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;*/
+    }
+
+    .mobile-links-active {
+        display: block;
     }
 }
