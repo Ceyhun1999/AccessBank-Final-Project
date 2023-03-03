@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./menuMobileItem.css";
 
 export default function MenuMobileItem({ data, idx }) {
@@ -8,8 +8,6 @@ export default function MenuMobileItem({ data, idx }) {
         if (idx === activeLink) setActiveLink(100);
         else setActiveLink(idx);
     };
-
-    useEffect(() => {}, []);
 
     return (
         <li key={idx}>

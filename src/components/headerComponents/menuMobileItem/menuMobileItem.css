@@ -1,0 +1,26 @@
+.mobile-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: 16px/26px "GTE-bold", sans-serif;
+    color: #626972;
+    letter-spacing: 0.5px;
+    min-height: 47px;
+}
+
+.mobile-link__drop {
+    padding: 0px 0px 0px 16px;
+    border-left: 4px solid #d2d6dc;
+    display: none;
+}
+
+.mobile-link__drop li {
+    font: 17px/23px "GTE-regular", sans-serif!important;
+    width: 100%;
+    padding: 5px 0;
+    color: #2362a9;
+    cursor: pointer;
+}
+
+.mobile-links-active { display: block }

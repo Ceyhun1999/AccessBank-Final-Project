@@ -59,9 +59,7 @@
     letter-spacing: 0.5px;
 }
 
-.highlight {
-    color: #31A993!important;
-}
+.highlight { color: #31A993!important }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
