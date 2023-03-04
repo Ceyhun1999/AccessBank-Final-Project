@@ -1,0 +1,11 @@
+.new-item {
+    width: 290px;
+    height: 180px;
+    background: red;
+}
+
+.new {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

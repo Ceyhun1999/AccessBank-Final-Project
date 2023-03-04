@@ -2,6 +2,8 @@ import Calculator from "../calculator/Calculator";
 import CurrencyBlock from "../currencyBlock/CurrencyBlock";
 import MyAccess from "../myAccess/MyAccess";
 import MyCard from "../myCard/MyCard";
+import Xeber from "../news/News";
+
 import SectionProducts from "../products/Products";
 import Slider from "../slider/Slider";
 
@@ -13,7 +15,7 @@ export default function Main() {
             <Calculator />
             <MyCard />
             <MyAccess />
-            <CurrencyBlock />
+            <Xeber />
         </main>
     );
 }

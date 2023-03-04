@@ -1,14 +1,13 @@
 import NavLanguage from "../navLanguage/NavLanguage";
+import Search from "../search/Search";
 import "./NavRightSecondItem.css";
 
-export default function NavRightSecondItem() {
+export default function NavRightSecondItem({ onChangeActiveSearch }) {
     return (
         <div className="nav__right-secondItem">
             <div className="nav__right-controls">
                 <NavLanguage />
-                <div className="nav__search">
-                    <div className="nav__search-inner"></div>
-                </div>
+                <Search onChangeActiveSearch={onChangeActiveSearch} />
             </div>
         </div>
     );

@@ -4,6 +4,8 @@
     margin-right: 61.5px;
 }
 
+.nav__right-firstItem-none { display: none }
+
 .nav__right-line {
     width: 4px;
     min-width: 4px;

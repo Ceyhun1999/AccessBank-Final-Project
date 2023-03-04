@@ -17,8 +17,8 @@ export default function CurrencyRates({ currencyListToday, currencyListYest, act
                     <tbody>
                         <tr className="thead">
                             <td></td>
-                            <td className={!activeTable ? "noActiveTable" : ""}>Alış</td>
-                            <td className={activeTable ? "last-td" + " activeTable" : "last-td"}>Satış</td>
+                            <td className={activeTable ? "noActiveTable" : ""}>Alış</td>
+                            <td className={!activeTable ? "last-td" + " activeTable" : "last-td"}>Satış</td>
                         </tr>
                         {Object.keys(currencyListToday).map((item, idx) => {
                             let decor = "stabil";
@@ -33,7 +33,7 @@ export default function CurrencyRates({ currencyListToday, currencyListYest, act
                                     <td>{item}</td>
                                     <td
                                         className={
-                                            !activeTable
+                                            activeTable
                                                 ? "price " + decor + " noActiveTable"
                                                 : "price " + decor
                                         }>
@@ -41,7 +41,7 @@ export default function CurrencyRates({ currencyListToday, currencyListYest, act
                                     </td>
                                     <td
                                         className={
-                                            activeTable
+                                            !activeTable
                                                 ? "price last-td " + decor + " activeTable"
                                                 : "price last-td " + decor
                                         }>

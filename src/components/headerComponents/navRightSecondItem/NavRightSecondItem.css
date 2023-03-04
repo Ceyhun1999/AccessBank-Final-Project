@@ -5,21 +5,6 @@
     padding-right: 25px;
 }
 
-.nav__search { 
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.nav__search-inner {
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: url('../../../../public/assets/img/headerImg/search.svg') center/cover;
-    background-size: 32px;
-}
-
 @media only screen and (max-width: 800px) {
     .nav__right-secondItem { display: none }
 }

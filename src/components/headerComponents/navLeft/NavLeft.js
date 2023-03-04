@@ -17,9 +17,6 @@ export default function NavLeft() {
 
     return (
         <div className={activeHeader ? "nav__left sticky" : "nav__left"}>
-            <a className="nav__logo-inner">
-                <div className="nav__logo"></div>
-            </a>
             {navBarData.data.map((item, idx) => {
                 let test = "";
                 if (idx === 3) test = "testing";
@@ -36,4 +33,3 @@ export default function NavLeft() {
         </div>
     );
 }
-

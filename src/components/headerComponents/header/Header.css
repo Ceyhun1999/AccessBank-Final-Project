@@ -22,9 +22,27 @@ header::before {
     z-index: -1;
 }
 
-.nav { display: flex; justify-content: space-between }
+.nav__content, .nav__content-none {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 180px);
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.nav__content-none { 
+    animation:  0.2s opacity forwards;
+}
+@keyframes opacity { 
+    0% { opacity: 1 } 
+    99% {opacity: 0; }
+   100% {display: none; }
+
+}
+
+
+
+
+.nav { display: flex }
 .nav__right { display: flex; align-items: center }
-
-
-
 

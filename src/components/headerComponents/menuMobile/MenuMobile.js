@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { navBarData } from "../../../data/Data";
 import MenuMobileItem from "../menuMobileItem/menuMobileItem";
 import NavRightFirstItem from "../navRightFirstItem/NavRightFirstItem";
+import Search from "../search/Search";
 import "./MenuMobile.css";
 
 export default function MenuMobile() {
@@ -9,7 +9,7 @@ export default function MenuMobile() {
         <div className="menu-mobile">
             <div className="menu-mobile__header">
                 <NavRightFirstItem />
-                <div className="menu-mobile__search"></div>
+                <Search />
             </div>
             <div className="menu-mobile__content">
                 <ul>
