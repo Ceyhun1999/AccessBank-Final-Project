@@ -1,18 +1,22 @@
 form, .form-none {
-    width: 100%;
+    width: calc(100% - 180px);
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     opacity: 0;
-    
+    position: absolute;
+    top: -200px;
+    transition: .2s ease opacity, height .2s;
 }
 
 .form-none { 
- 
+    position: relative;
+    top: 0;  
+    opacity: 1;
 }
 
-
+.form__h-60 { height: 60px!important }
 
 .search__input {
     display: inline-flex;
@@ -44,4 +48,4 @@ form, .form-none {
     transition: 0.2s ease;
 }
 
-.search__close-btn:hover {  }
+.search__close-btn:hover { background-color: #f3f3f3 }

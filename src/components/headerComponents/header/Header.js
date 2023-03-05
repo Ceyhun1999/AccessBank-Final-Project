@@ -11,7 +11,9 @@ import Form from "../form/Form";
 export default function Header() {
     const [activeMenu, setActiveMenu] = useState(false);
     const [activeSearch, setActiveSearch] = useState(false);
+    const [activeHeader, setActiveHeader] = useState(false);
 
+    const onChangeActiveHeader = (x) => setActiveHeader(x);
     const onChangeActiveMenu = () => setActiveMenu((x) => !x);
     const onChangeActiveSearch = () => setActiveSearch((x) => !x);
 
@@ -23,12 +25,17 @@ export default function Header() {
     return (
         <header>
             <div className="header-content ">
-                <nav className="nav">
+                <nav className={activeHeader ? "nav sticky" : "nav"}>
                     <a className="nav__logo-inner">
                         <div className="nav__logo"></div>
                     </a>
+                    <Form
+                        activeHeader={activeHeader}
+                        activeSearch={activeSearch}
+                        onChangeActiveSearch={onChangeActiveSearch}
+                    />
                     <div className={activeSearch ? "nav__content-none" : "nav__content"}>
-                        <NavLeft />
+                        <NavLeft onChangeActiveHeader={onChangeActiveHeader} activeHeader={activeHeader} />
                         <div className="nav__right">
                             {!activeMenu ? <NavRightFirstItem /> : null}
                             {activeMenu ? <NavLanguage /> : null}
@@ -37,7 +44,6 @@ export default function Header() {
                         </div>
                     </div>
                 </nav>
-
                 {activeMenu ? <MenuMobile /> : null}
             </div>
         </header>

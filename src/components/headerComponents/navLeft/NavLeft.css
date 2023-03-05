@@ -44,7 +44,7 @@
     transform: translate(-52%, 0);
 }
 
-.sticky .nav__logo-inner{ transition: height .2s; height: 60px }
+.sticky .nav__logo-inner { transition: height .2s; height: 60px }
 .sticky .drop { top: 60px }
 
 .nav__logo-inner:hover { background-color: #f9fafb }

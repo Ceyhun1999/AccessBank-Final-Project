@@ -12,3 +12,5 @@
     background: url('../../../../public/assets/img/headerImg/search.svg') center/cover;
     background-size: 32px;
 }
+
+.nav__search:hover { background: #f3f3f3 }

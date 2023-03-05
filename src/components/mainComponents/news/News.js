@@ -11,9 +11,7 @@ export default function Xeber() {
             pagination={{
                 clickable: true,
             }}
-            className="mySwiper"
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}>
+            className="mySwiper">
             <SwiperSlide className="new-item">Slide 1</SwiperSlide>
             <SwiperSlide className="new-item">Slide 2</SwiperSlide>
             <SwiperSlide className="new-item">Slide 3</SwiperSlide>

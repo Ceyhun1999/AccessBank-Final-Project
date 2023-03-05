@@ -26,22 +26,15 @@ header::before {
     display: flex;
     justify-content: space-between;
     width: calc(100% - 180px);
-    transition: 0.2s;
+    transition: 1s ease ;
     opacity: 1;
 }
 
 .nav__content-none { 
-    animation:  0.2s opacity forwards;
+    position: absolute;
+    top: -200px;
+    opacity: 0;
 }
-@keyframes opacity { 
-    0% { opacity: 1 } 
-    99% {opacity: 0; }
-   100% {display: none; }
-
-}
-
-
-
 
 .nav { display: flex }
 .nav__right { display: flex; align-items: center }

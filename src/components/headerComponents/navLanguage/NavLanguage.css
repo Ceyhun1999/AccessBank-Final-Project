@@ -69,7 +69,6 @@
     animation-fill-mode: both;
     animation-name: fadeIn; 
 }
-.nav__search:hover { background: #f3f3f3 }
 
 @keyframes fadeIn {
     0% { opacity: 0 }

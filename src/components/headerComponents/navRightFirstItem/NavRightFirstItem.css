@@ -47,7 +47,7 @@
     font-size: 13px;
 }
 
-.nav__right-item--noActive:hover  a { color: #3583d8 }
+.nav__right-item--noActive:hover a { color: #3583d8 }
 
 @media only screen and (max-width: 800px) {
 

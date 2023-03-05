@@ -1,16 +1,14 @@
-import { useState } from "react";
 import { navBarData } from "../../../data/Data";
 import DropDowns from "../dropDowns/DropDowns";
 import "./NavLeft.css";
 
-export default function NavLeft() {
-    const [activeHeader, setActiveHeader] = useState(false);
-
+export default function NavLeft({ activeHeader, onChangeActiveHeader }) {
     const changeBg = () => {
         let flag = false;
         if (document.documentElement.scrollTop > 0) flag = true;
         else flag = false;
-        setActiveHeader(flag);
+        onChangeActiveHeader(flag);
+        console.log(flag);
     };
 
     window.addEventListener("scroll", changeBg);
