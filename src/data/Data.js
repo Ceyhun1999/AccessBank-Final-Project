@@ -255,4 +255,29 @@ const calcData = {
     },
 };
 
-export { navBarData, sliderData, productData, calcData };
+const newsData = {
+    data: [
+        {
+            img: "NigarHuseynzade.jpg",
+            data: "07.03.2023",
+            desc: "8 mart ilin yeganə günüdür ki, zərif olmağımızı özümüzə utanc bilmirik",
+        },
+        {
+            img: "DariuszKacprzyk.jpg",
+            data: "13.02.2023",
+            desc: "“Əldə edilənlər və yaxın gələcək üçün planlaşdırılanlar Bankın gələcəyinə inam yaradır”: AccessBank-ın Müşahidə Şurasının üzvü Dariuş Kasprşik ilə müsahibə",
+        },
+        {
+            img: "TurkiyeyeDestek.jpg",
+            data: "09.02.2023",
+            desc: "AccessBank-dan Türkiyəyə dəstək",
+        },
+        {
+            img: "ForSite.png",
+            data: "24.01.2023",
+            desc: "AccessBank 2022-ci il üzrə maliyyə hesabatını açıqlayır",
+        },
+    ],
+};
+
+export { navBarData, sliderData, productData, calcData, newsData };

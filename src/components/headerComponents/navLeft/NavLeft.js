@@ -8,7 +8,6 @@ export default function NavLeft({ activeHeader, onChangeActiveHeader }) {
         if (document.documentElement.scrollTop > 0) flag = true;
         else flag = false;
         onChangeActiveHeader(flag);
-        console.log(flag);
     };
 
     window.addEventListener("scroll", changeBg);
