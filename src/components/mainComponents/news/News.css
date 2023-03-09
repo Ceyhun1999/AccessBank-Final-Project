@@ -39,8 +39,10 @@
     border-radius: 5px;
 }
 
-.news-item__data {
+.news-item__date {
     font: 14px/16px "GTE-regular", sans-serif;
+    display: block;
+    margin-top: 8px;
     margin-bottom: 4px;
     color: #949494;
     letter-spacing: 0.5px;

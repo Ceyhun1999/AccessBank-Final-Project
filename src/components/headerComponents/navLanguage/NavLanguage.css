@@ -59,13 +59,15 @@
 .nav__language:hover .nav__language-main { background: #f3f3f3 }
 .nav__language-main:hover { background: #f3f3f3 }
 .nav__language-main:hover ~ .nav__language-other { 
-    display: block;animation-duration: 1s;
+    display: block;
+    animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeIn; 
 }
 .nav__language-other div:hover { background: #f2f8ff }
 .nav__language-other:hover { 
-    display: block;animation-duration: 1s;
+    display: block;
+    animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeIn; 
 }
@@ -73,6 +75,10 @@
 @keyframes fadeIn {
     0% { opacity: 0 }
     100% { opacity: 1 }
+}
+
+@media only screen and (min-width: 800px) {
+    .d-none__lang { display: none }
 }
 
 @media only screen and (max-width: 800px) {

@@ -23,7 +23,7 @@ export default function Header() {
     }, [activeMenu]);
 
     return (
-        <header>
+        <header className={activeSearch ? "boxShadow" : ""}>
             <div className="header-content ">
                 <nav className={activeHeader ? "nav sticky" : "nav"}>
                     <a className="nav__logo-inner">
@@ -38,7 +38,7 @@ export default function Header() {
                         <NavLeft onChangeActiveHeader={onChangeActiveHeader} activeHeader={activeHeader} />
                         <div className="nav__right">
                             {!activeMenu ? <NavRightFirstItem /> : null}
-                            {activeMenu ? <NavLanguage /> : null}
+                            {activeMenu ? <NavLanguage className={'d-none__lang'} /> : null}
                             <NavRightSecondItem onChangeActiveSearch={onChangeActiveSearch} />
                             <MenuToggleBtn activeMenu={activeMenu} onChangeActiveMenu={onChangeActiveMenu} />
                         </div>

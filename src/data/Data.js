@@ -160,9 +160,6 @@ const sliderData = {
                 btnBg: "#fff",
                 btnTxtColor: "#2673B7",
                 borderColor: "#c4d4e5",
-                //btnBg: "#31A993",
-                //btnTxtColor: "#fff",
-                //borderColor: "2px solid #31A993",
             },
             bg: "#f1f5ff",
         },
@@ -216,6 +213,7 @@ const sliderData = {
 const productData = {
     data: {
         title: "Seçilmiş məhsullar",
+        cardImg: "",
         cardsInfo: [
             {
                 cardImg: "",
@@ -225,7 +223,6 @@ const productData = {
                 cardLink: "Kreditlər",
             },
             {
-                cardImg: "",
                 cardTitle: "Müddətli depozit",
                 cardDesc:
                     "50 manatdan (ABŞ dolları) başlayan istənilən məbləği 6 aydan 24 ayadək müddətə banka yatırmaqla vəsaitinizi çoxalda bilərsiniz!",
@@ -259,25 +256,65 @@ const newsData = {
     data: [
         {
             img: "NigarHuseynzade.jpg",
-            data: "07.03.2023",
+            date: "07.03.2023",
             desc: "8 mart ilin yeganə günüdür ki, zərif olmağımızı özümüzə utanc bilmirik",
         },
         {
             img: "DariuszKacprzyk.jpg",
-            data: "13.02.2023",
+            date: "13.02.2023",
             desc: "“Əldə edilənlər və yaxın gələcək üçün planlaşdırılanlar Bankın gələcəyinə inam yaradır”: AccessBank-ın Müşahidə Şurasının üzvü Dariuş Kasprşik ilə müsahibə",
         },
         {
             img: "TurkiyeyeDestek.jpg",
-            data: "09.02.2023",
+            date: "09.02.2023",
             desc: "AccessBank-dan Türkiyəyə dəstək",
         },
         {
             img: "ForSite.png",
-            data: "24.01.2023",
+            date: "24.01.2023",
             desc: "AccessBank 2022-ci il üzrə maliyyə hesabatını açıqlayır",
         },
     ],
 };
 
-export { navBarData, sliderData, productData, calcData, newsData };
+const footerData = {
+    data: [
+        {
+            title: "BANK HAQQINDA",
+            spans: [
+                "Missiya və strateji baxış",
+                "Bank rəqəmlərdə",
+                "Tariximiz",
+                "Mükafatlar",
+                "Bank rekvizitləri",
+                "Tariflər və sənədlər",
+            ],
+        },
+        {
+            title: "İDARƏETMƏ STRUKTURU",
+            spans: ["Təşkilati struktur", "Səhmdarlar", "İdarə Heyəti"],
+        },
+        {
+            title: "Korporativ İdarəetmə",
+            spans: [
+                "Daxili komitələr",
+                "Risklərin İdarəedilməsi",
+                "Müştəri̇ Hüquqlarının Mühafi̇zəsi̇ (MHM) pri̇nsi̇pləri̇",
+            ],
+        },
+        {
+            title: "Xəbərlər",
+            spans: ["Xəbərlər", "Elanlar"],
+        },
+        {
+            title: "İnsan resursları",
+            spans: ["Karyera", "Vakansiyalar"],
+        },
+        {
+            title: "Əlaqə",
+            spans: ["Bizimlə əlaqə", "Xidmət şəbəkəsi", "Tez-tez verilən suallar"],
+        },
+    ],
+};
+
+export { navBarData, sliderData, productData, calcData, newsData, footerData };

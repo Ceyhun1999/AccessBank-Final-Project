@@ -40,7 +40,7 @@ export default function News() {
                                     background: `url('./assets/img/mainImg/newsImg/${item.img}') center/cover`,
                                 }}
                                 className="news-item__img"></div>
-                            <span className="news-item__data">{item.data}</span>
+                            <span className="news-item__date">{item.date}</span>
                             <p className="news-item__text">{item.desc}</p>
                         </SwiperSlide>
                     ))}
