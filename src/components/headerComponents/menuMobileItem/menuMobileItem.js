@@ -13,7 +13,7 @@ export default function MenuMobileItem({ data, idx }) {
         <li key={idx}>
             <div onClick={() => onChangeActiveLink(idx)} className="mobile-link">
                 <p>{data.link}</p>
-                <span></span>
+                <span className={activeLink === idx ? "arrowHeader-active" : ""}></span>
             </div>
             <div
                 className={

@@ -1,3 +1,14 @@
+.menu-mobile__content span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../../../../public/assets/img/headerImg/arrowDown.svg');
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.arrowHeader-active { transform: rotate(0deg)!important }
+
 .mobile-link {
     cursor: pointer;
     display: flex;

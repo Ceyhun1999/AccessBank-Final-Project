@@ -19,7 +19,7 @@ export default function Header() {
 
     useEffect(() => {
         const body = document.querySelector("body");
-        activeMenu ? (body.style.overflow = "hidden") : (body.style.overflow = "");
+        activeMenu ? (body.classList.add("bodyOverFlow")) : (body.classList.remove("bodyOverFlow"));
     }, [activeMenu]);
 
     return (

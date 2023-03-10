@@ -33,14 +33,6 @@
 
     .menu-mobile__content { padding: 10px 20px }
 
-    .menu-mobile__content span {
-        display: block;
-        width: 30px;
-        height: 30px;
-        background: url('../../../../public/assets/img/headerImg/arrowDown.svg');
-        transform: rotate(-90deg);
-    }
-
     .menu-mobile__footer {
         border-top: 1px solid #e6e6e6;
         /*padding: 10px 20px;

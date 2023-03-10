@@ -1,0 +1,139 @@
+.footer__bottom { margin-top: 90px }
+
+.footer__bottom-item1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__icons { display: flex }
+
+.footer__icons span {
+    display: block;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 100px;
+    transition: 0.2s ease;
+    margin: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 32px;
+    background-color: #f5f5f5;
+}
+
+.facebook { background: url('../../../../public/assets/img/footerImg/icons/facebook.svg') }
+.inst { background: url('../../../../public/assets/img/footerImg/icons/instagram.svg') }
+.tiktok { background: url('../../../../public/assets/img/footerImg/icons/tiktok.svg') }
+.linkedin { background: url('../../../../public/assets/img/footerImg/icons/linkedin.svg') }
+.twitter { background: url('../../../../public/assets/img/footerImg/icons/twitter.svg')  }
+.whatsapp { background: url('../../../../public/assets/img/footerImg/icons/whatsapp.svg') }
+.telegram { background: url('../../../../public/assets/img/footerImg/icons/telegram.svg') }
+
+.footer__logos { display: flex }
+
+.footer__logo1 {
+    display: block;
+    width: 130px;
+    height: 50px;
+    background: url('../../../../public/assets/img/footerImg/logos/myAccess.svg') no-repeat center/contain;
+    margin: 0 12px;
+}
+
+.footer__logo2 {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background: url('../../../../public/assets/img/footerImg/logos/phone.svg') no-repeat center/cover;
+    margin: 0 15px;
+    filter: brightness(0.6);
+}
+
+.footer__bottom-item2 span {
+    display: block;
+    height: 50px;
+    filter: brightness(0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__bottom-item2 {
+    display: flex;
+    margin-top: 6px;
+}
+
+.msp {
+    width: 140px;
+    background-image: url('../../../../public/assets/img/footerImg/logos2/MSP.svg');
+    background-size: 150px;
+}
+
+.infobank {
+    width: 130px;
+    background-image: url('../../../../public/assets/img/footerImg/logos2/infobank.svg');
+    background-size: 120px;
+}
+
+.egov {
+    width: 80px;
+    background-image: url('../../../../public/assets/img/footerImg/logos2/egov.svg');
+    background-size: 88px;
+}
+
+.adif {
+    width: 80px;
+    background-image: url('../../../../public/assets/img/footerImg/logos2/ADIF-v2-az-gr.svg');
+    background-size: 70px;
+}
+
+.footer__bottom-item3 {
+    margin-top: 11px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credits {
+    font: 15px "GTE-light", sans-serif;
+    color: #474747;
+    letter-spacing: 0.5px;
+}
+
+.credits-link {
+    display: block;
+    width: 180px;
+    height: 32px;
+    background: url('../../../../public/assets/img/footerImg/logos2/nlink-credits-grey.svg') no-repeat center right;
+    background-size: 150px;
+    border-radius: 50px
+}
+
+@media only screen and (max-width: 800px) {
+
+    .footer__bottom { margin-top: 10px }
+
+    .footer__icons { margin-top: 15px; }
+
+
+    .footer__bottom-item1 {
+        align-items: center;
+        flex-direction: column-reverse;
+        /*flex-wrap: wrap;*/
+    }
+
+    .footer__bottom-item2 {
+        /*flex-wrap: wrap;*/
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .footer__bottom-item3 {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .credits-link {
+        margin-top: 10px;
+    }
+}
