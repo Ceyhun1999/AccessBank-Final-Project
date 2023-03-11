@@ -19,10 +19,14 @@ export default function FooterBottom() {
                 </div>
             </div>
             <div className="footer__bottom-item2">
-                <span className="msp"></span>
-                <span className="infobank"></span>
-                <span className="egov"></span>
-                <span className="adif"></span>
+                <div>
+                    <span className="msp"></span>
+                    <span className="infobank"></span>
+                </div>
+                <div>
+                    <span className="egov"></span>
+                    <span className="adif"></span>
+                </div>
             </div>
             <div className="footer__bottom-item3">
                 <span className="credits">© 2023 «AccessBank» QSC. Bütün hüquqlar qorunur</span>

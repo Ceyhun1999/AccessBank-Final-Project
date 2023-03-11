@@ -4,9 +4,7 @@ import "./FooterTop.css";
 export default function FooterTop({ item, idx }) {
     const [active, setActive] = useState(false);
 
-    const onChangeActive = () => {
-        setActive((x) => !x);
-    };
+    const onChangeActive = () =>  setActive((x) => !x);
 
     return (
         <div key={idx} className="footer__top-item">

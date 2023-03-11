@@ -7,7 +7,6 @@
 .nav__right-firstItem-none { display: none }
 
 .nav__right-line {
-    width: 4px;
     min-width: 4px;
     height: 40px;
     background: #e2e6ea;
@@ -52,12 +51,12 @@
 @media only screen and (max-width: 800px) {
 
     .nav__right-firstItem { flex-direction: row-reverse; margin-right: 23px }
-    .nav__right-line { width: 2px; margin: 0 0 0 16px }
+    .nav__right-line { min-width: 2px; margin: 0 0 0 16px }
     .nav__right-links { flex-direction: column; align-items: end }
     .nav__right-links a { font-size: 14px }
     .nav__right-item--active a { font-size: 12px }
 }
 
 @media only screen and (max-width: 400px) {
-    .nav__right-firstItem { flex-direction: row-reverse; margin-right: 10px }
+    .nav__right-firstItem { flex-direction: row-reverse; margin-right: 7px }
 }

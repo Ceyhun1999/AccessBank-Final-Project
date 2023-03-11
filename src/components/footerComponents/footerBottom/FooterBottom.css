@@ -9,6 +9,7 @@
 .footer__icons { display: flex }
 
 .footer__icons span {
+    cursor: pointer;
     display: block;
     width: 44px;
     height: 44px;
@@ -30,7 +31,10 @@
 .whatsapp { background: url('../../../../public/assets/img/footerImg/icons/whatsapp.svg') }
 .telegram { background: url('../../../../public/assets/img/footerImg/icons/telegram.svg') }
 
-.footer__logos { display: flex }
+.footer__logos { 
+    display: flex;
+    cursor: pointer;
+}
 
 .footer__logo1 {
     display: block;
@@ -61,6 +65,8 @@
     display: flex;
     margin-top: 6px;
 }
+
+.footer__bottom-item2 div { display: flex }
 
 .msp {
     width: 140px;
@@ -109,31 +115,57 @@
     border-radius: 50px
 }
 
+.footer__icons span:hover { filter: brightness(0.95) }
+
 @media only screen and (max-width: 800px) {
 
+    .footer { padding: 0 }
     .footer__bottom { margin-top: 10px }
 
     .footer__icons { margin-top: 15px; }
 
-
     .footer__bottom-item1 {
         align-items: center;
         flex-direction: column-reverse;
-        /*flex-wrap: wrap;*/
+    }
+
+    .footer__icons {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .footer__bottom-item2 {
-        /*flex-wrap: wrap;*/
+        flex-wrap: wrap;
         margin-top: 20px;
         justify-content: center;
+      
     }
 
     .footer__bottom-item3 {
         margin-top: 25px;
         flex-direction: column;
+        text-align: center;
     }
 
-    .credits-link {
+    .credits-link { 
         margin-top: 10px;
+        background-position: 15px!important;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .footer__logo1, .footer__logo2 { margin: 0 }
+    .footer__logo1 { margin-right: 10px }
+    .footer__bottom-item2 span { min-width: 140px }
+    .infobank { background-position: 2px!important }
+    .egov { background-position: -8px!important }
+    .adif { background-position: left!important }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .footer__bottom-item2 span { width: 120px; min-width: inherit }
+    .egov { background-position: -2px!important }
+    .msp { background-position: 2px!important }
 }

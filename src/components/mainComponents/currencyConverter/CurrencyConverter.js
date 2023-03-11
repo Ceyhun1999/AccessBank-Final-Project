@@ -20,9 +20,11 @@ export default function CurrencyConverter({ currencyListToday, onChangeActiveTab
         if (inpV1 !== "") {
             x = (inpV1 * currencyListToday[slcV1]) / currencyListToday[slcV2];
             slcV1 === slcV2 ? setInpV2(x.toFixed(0)) : setInpV2(x.toFixed(2));
+            console.log('calcInpV2   +   if');
         } else {
             x = "";
             setInpV2(x);
+            console.log('calcInpV2   +   else');
         }
     };
 
@@ -31,9 +33,11 @@ export default function CurrencyConverter({ currencyListToday, onChangeActiveTab
         if (inpV2 !== "") {
             y = (inpV2 * currencyListToday[slcV2]) / currencyListToday[slcV1];
             slcV1 === slcV2 ? setInpV1(y.toFixed(0)) : setInpV1(y.toFixed(2));
+            console.log('calcInpV1   +   if');
         } else {
             y = "";
             setInpV1(y);
+            console.log('calcInpV1   +   else');
         }
     };
 
