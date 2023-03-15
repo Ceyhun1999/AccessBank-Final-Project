@@ -8,10 +8,12 @@
         position: fixed;
         width: 100%;
         height: calc(100vh - 70px);
-        background: #fff;
+        background: #f5f7fa;
         z-index: -5;
         overflow: auto;
     }
+
+    .menu-mobile__sticky {  height: calc(100vh - 60px) }
     
     .menu-mobile__header {
         display: flex;
@@ -19,11 +21,12 @@
         justify-content: end;
         padding: 15px 15px 10px 20px;
         border-bottom: 1px solid #e3e5e9;
+        background: #fff;
     }
 
     .menu-mobile__header .nav__right-line { display: none }
     .menu-mobile__header .nav__right-links { flex-direction: row;  margin-right: 50px }
-    .menu-mobile__header a { font-size: 16px; padding: 10px }
+    .menu-mobile__header a { font-size: 16px; padding: 12px }
 
     .menu-mobile__search {
         width: 32px;
@@ -31,13 +34,43 @@
         background: url('../../../../public/assets/img/headerImg/search.svg');
     }
 
-    .menu-mobile__content { padding: 10px 20px }
+    .menu-mobile__content { 
+        padding: 15px 20px;
+        background: #fff;
+    }
 
     .menu-mobile__footer {
         border-top: 1px solid #e6e6e6;
-        /*padding: 10px 20px;
+        background: #f5f7fa;
+        padding: 10px 20px;
+      
+    }
+
+    .menu-mobile__footer-item1 {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;*/
     }
+
+    .pin {
+        display: block;
+        width: 46px;
+        height: 46px;
+        background: url('../../../../public/assets/img/headerImg/pin.svg') no-repeat center center;
+        background-size: 21px;
+    }
+
+    .phone {
+        display: block;
+        width: 90px;
+        height: 50px;
+        border-radius: 100px;
+        margin: 6px 0;
+        padding: 0 6px;
+        background: url('../../../../public/assets/img/headerImg/phone.svg') no-repeat center center;
+        background-size: 70px;
+    }
+
+    .menu-mobile .footer__icons span { background-color: inherit }
+    .menu-mobile .footer__icons { justify-content: flex-start; margin-top: inherit }
+    .menu-mobile .footer__icons span:hover { background-color: inherit }
 }

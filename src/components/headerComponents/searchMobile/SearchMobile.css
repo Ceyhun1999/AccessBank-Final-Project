@@ -1,0 +1,14 @@
+.nav__search-mobile { 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.nav__search-inner-mobile {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: url('../../../../public/assets/img/headerImg/search.svg') center/cover;
+    background-size: 32px;
+}

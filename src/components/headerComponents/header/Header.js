@@ -12,14 +12,16 @@ export default function Header() {
     const [activeMenu, setActiveMenu] = useState(false);
     const [activeSearch, setActiveSearch] = useState(false);
     const [activeHeader, setActiveHeader] = useState(false);
+    const [activeSearchMobile, setActiveSearchMobile] = useState(false);
 
     const onChangeActiveHeader = (x) => setActiveHeader(x);
     const onChangeActiveMenu = () => setActiveMenu((x) => !x);
     const onChangeActiveSearch = () => setActiveSearch((x) => !x);
+    const onChangeActiveSearchMobile = () => setActiveSearchMobile((x) => !x);
 
     useEffect(() => {
         const body = document.querySelector("body");
-        activeMenu ? (body.classList.add("bodyOverFlow")) : (body.classList.remove("bodyOverFlow"));
+        activeMenu ? body.classList.add("bodyOverFlow") : body.classList.remove("bodyOverFlow");
     }, [activeMenu]);
 
     return (
@@ -38,13 +40,19 @@ export default function Header() {
                         <NavLeft onChangeActiveHeader={onChangeActiveHeader} activeHeader={activeHeader} />
                         <div className="nav__right">
                             {!activeMenu ? <NavRightFirstItem /> : null}
-                            {activeMenu ? <NavLanguage className={'d-none__lang'} /> : null}
+                            {activeMenu ? <NavLanguage className={"d-none__lang"} /> : null}
                             <NavRightSecondItem onChangeActiveSearch={onChangeActiveSearch} />
                             <MenuToggleBtn activeMenu={activeMenu} onChangeActiveMenu={onChangeActiveMenu} />
                         </div>
                     </div>
                 </nav>
-                {activeMenu ? <MenuMobile /> : null}
+                {activeMenu ? (
+                    <MenuMobile
+                        activeSearchMobile={activeSearchMobile}
+                        activeHeader={activeHeader}
+                        onChangeActiveSearchMobile={onChangeActiveSearchMobile}
+                    />
+                ) : null}
             </div>
         </header>
     );

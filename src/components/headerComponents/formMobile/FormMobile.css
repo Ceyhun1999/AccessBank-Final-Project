@@ -1,26 +1,14 @@
-form {
-    width: calc(100% - 180px);
-    height: 70px;
+.form-mobile {
+    width: 100%;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    top: -200px;
-    transition: .2s ease opacity, height .2s;
 }
 
-
-.form-opacity1 { 
-    position: relative;
-    top: 0;  
-    opacity: 1;
-}
-
-.form__h-60 { height: 60px!important }
-
-.search__input {
+.search__input-mobile {
     display: inline-flex;
-    width: calc(100% - 245px);
+    width: 100%;
     padding: 10px 10px 10px 40px;
     margin: 0;
     font: 18px "GTE-light", sans-serif;
@@ -34,7 +22,7 @@ form {
     outline: none;
 }
 
-.search__close-btn {
+.search__close-btnMobile {
     display: inline-flex;
     height: 40px;
     width: 40px;
@@ -48,4 +36,3 @@ form {
     transition: 0.2s ease;
 }
 
-.search__close-btn:hover { background-color: #f3f3f3 }

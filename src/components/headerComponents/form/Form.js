@@ -9,7 +9,7 @@ export default function Form({ activeSearch, onChangeActiveSearch, activeHeader 
     return (
         <form
             className={
-                activeHeader ? (activeSearch ? "form-none form__h-60" : "") : activeSearch ? "form-none" : ""
+                activeHeader ? (activeSearch ? "form-opacity1 form__h-60" : "") : activeSearch ? "form-opacity1" : ""
             }>
             <input
                 ref={inputRef}
