@@ -41,7 +41,6 @@ header::before {
 .nav { display: flex }
 .nav__right { display: flex; align-items: center }
 
-
 @media only screen and (max-width: 800px) {
     .bodyOverFlow { overflow: hidden }
 }
