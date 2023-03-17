@@ -18,7 +18,7 @@ export default function Slider() {
             modules={[Autoplay, Navigation, Pagination, A11y]}
             slidesPerView={1}
             navigation
-            pagination={{ dynamicBullets: true }}>
+            pagination={{ dynamicBullets: true, clickable: true }}>
             {sliderData.data.map((item, idx) => (
                 <SwiperSlide key={idx} style={{ background: item.bg }}>
                     <div className="container">
