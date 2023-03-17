@@ -25,7 +25,7 @@ const navBarData = {
                 },
             ],
             dropImg: {
-                dropImgSrc: "./assets/img/headerImg/myCardStandardSmall.png",
+                dropImgSrc: "./assets/img/headerImg/myCardStandardSmall.jpg",
                 dropImgDesc1: "Kredit kartı - 10 000-dək",
                 dropImgDesc2: "Etdiyiniz hər ödənişə 50 günlük güzəşt müddəti əldə edin",
                 dropImgName: "Kredit kartı",
@@ -52,7 +52,7 @@ const navBarData = {
                 },
             ],
             dropImg: {
-                dropImgSrc: "./assets/img/headerImg/myCardLuxSmall.png",
+                dropImgSrc: "./assets/img/headerImg/myCardLuxSmall.jpg",
                 dropImgDesc1: "myCard Lux",
                 dropImgDesc2: "Rahatlığınıza zəmanət verən kart. Yüksək statusa hər şey daxildir",
                 dropImgName: "Debet kartı",
